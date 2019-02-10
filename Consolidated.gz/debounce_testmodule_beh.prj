@@ -1,0 +1,4 @@
+verilog work "one_btn_debounce.v"
+verilog work "btn_debouce.v"
+verilog work "debounce_testmodule.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

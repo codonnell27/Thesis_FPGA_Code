@@ -1,0 +1,5 @@
+set -tmpdir "Z:/VM_Shared_folder/AD_code/xst/projnav.tmp"
+set -xsthdpdir "Z:/VM_Shared_folder/AD_code/xst"
+elaborate
+-ifn fifo32k.prj
+-ifmt mixed

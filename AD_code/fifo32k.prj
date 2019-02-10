@@ -1,0 +1,2 @@
+verilog work "../High_Speed_New_Octal_Interposer/fifo32k_by_1.v"
+verilog work "../High_Speed_New_Octal_Interposer/fifo32k.v"

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">dco_p</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_dco_p</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">U1/DCM1</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLK90</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_U1_dcoshifted = PERIOD &quot;U1_dcoshifted&quot; TS_dco_p PHASE 0.641025641 ns HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">fco_p</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_fco_p</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">U1/DCM2</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_U1_clk0f = PERIOD &quot;U1_clk0f&quot; TS_fco_p HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="NgdBuild" num="1222" delta="old" >Setting <arg fmt="%s" index="1">CLKIN_PERIOD</arg> attribute associated with <arg fmt="%s" index="2">DCM</arg> instance <arg fmt="%s" index="3">U1/DCM2</arg> to <arg fmt="%s" index="4">15.384615</arg> ns based on the period specification (<arg fmt="%s" index="5">&lt;TIMESPEC TS_fco_p = PERIOD &quot;fco_p&quot; 65 MHz;&gt; [Z:/VM_Shared_folder/High_Speed_New_Octal_Interposer/Top.ucf(29)]</arg>).
+</msg>
+
+<msg type="info" file="NgdBuild" num="1222" delta="old" >Setting <arg fmt="%s" index="1">CLKIN_PERIOD</arg> attribute associated with <arg fmt="%s" index="2">DCM</arg> instance <arg fmt="%s" index="3">U1/DCM1</arg> to <arg fmt="%s" index="4">2.564103</arg> ns based on the period specification (<arg fmt="%s" index="5">&lt;TIMESPEC TS_dco_p = PERIOD &quot;dco_p&quot; 390 MHz;&gt; [Z:/VM_Shared_folder/High_Speed_New_Octal_Interposer/Top.ucf(27)]</arg>).
+</msg>
+
+</messages>
+

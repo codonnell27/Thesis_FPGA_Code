@@ -1,0 +1,19 @@
+iMPACT Version: Oct 13 2013 10:01:22
+
+iMPACT log file Started on Sat Nov 24 15:47:43 2018
+
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoInfer            false               
+SvfPlayDisplayComments false               
+INFO:iMPACT:2643 - Could not open impact_project.ipf

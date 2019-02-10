@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=Z:\VM_Shared_folder\UART out.gz\impact.xsl
+OUTFILE=Z:\VM_Shared_folder\UART out.gz\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=Z:\VM_Shared_folder\UART out.gz
+LICENSE=iMPACT
+USER_INFO=iMPACT

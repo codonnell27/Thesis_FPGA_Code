@@ -1,0 +1,5 @@
+verilog work "one_btn_debounce.v"
+verilog work "uart_transmit.v"
+verilog work "uart_receive.v"
+verilog work "btn_debouce.v"
+verilog work "main.v"

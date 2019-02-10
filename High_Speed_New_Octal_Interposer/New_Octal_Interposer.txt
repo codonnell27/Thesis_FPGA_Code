@@ -1,0 +1,6 @@
+FILE QUARANTINED
+
+The original contents of this file have been replaced with
+this message because of its characteristics.
+File name: 'High_Speed_New_Octal_Interposer.zip->New_Octal_Interposer.ise'
+Malware name: 'CorruptedCompressedFile'

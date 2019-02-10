@@ -1,0 +1,57 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc
+Z:/VM_Shared_folder/High_Speed_New_Octal_Interposer/Top.ucf -p xc4vfx12-ff668-10
+Top.ngc Top.ngd
+
+Reading NGO file "Z:/VM_Shared_folder/AD_code/Top.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"Z:/VM_Shared_folder/High_Speed_New_Octal_Interposer/Top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'dco_p', used in period specification
+   'TS_dco_p', was traced into DCM_ADV instance U1/DCM1. The following new TNM
+   groups and period specifications were generated at the DCM_ADV output(s): 
+   CLK90: <TIMESPEC TS_U1_dcoshifted = PERIOD "U1_dcoshifted" TS_dco_p PHASE
+   0.641025641 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'fco_p', used in period specification
+   'TS_fco_p', was traced into DCM_ADV instance U1/DCM2. The following new TNM
+   groups and period specifications were generated at the DCM_ADV output(s): 
+   CLK0: <TIMESPEC TS_U1_clk0f = PERIOD "U1_clk0f" TS_fco_p HIGH 50%>
+
+Done...
+
+INFO:NgdBuild:1222 - Setting CLKIN_PERIOD attribute associated with DCM instance
+   U1/DCM2 to 15.384615 ns based on the period specification (<TIMESPEC TS_fco_p
+   = PERIOD "fco_p" 65 MHz;>
+   [Z:/VM_Shared_folder/High_Speed_New_Octal_Interposer/Top.ucf(29)]).
+INFO:NgdBuild:1222 - Setting CLKIN_PERIOD attribute associated with DCM instance
+   U1/DCM1 to 2.564103 ns based on the period specification (<TIMESPEC TS_dco_p
+   = PERIOD "dco_p" 390 MHz;>
+   [Z:/VM_Shared_folder/High_Speed_New_Octal_Interposer/Top.ucf(27)]).
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 136116 kilobytes
+
+Writing NGD file "Top.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "Top.bld"...

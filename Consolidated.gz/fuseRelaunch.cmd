@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/VM_Shared_folder/UART out.gz/image_configs_text_isim_beh.exe" -prj "Z:/VM_Shared_folder/UART out.gz/image_configs_text_beh.prj" "work.image_configs_text" "work.glbl" 

@@ -1,0 +1,6 @@
+MO spi_write_8b NULL ../High_Speed_New_Octal_Interposer/spi_write_8b.v vlg13/spi__write__8b.bin 1542400474
+MO Top NULL ../High_Speed_New_Octal_Interposer/Top.v vlg4F/_top.bin 1542400474
+MO storage NULL ../High_Speed_New_Octal_Interposer/storage.v vlg19/storage.bin 1542400474
+MO fifo32k NULL ../High_Speed_New_Octal_Interposer/fifo32k.v vlg6C/fifo32k.bin 1542400474
+MO fifo32k_by_1 NULL ../High_Speed_New_Octal_Interposer/fifo32k_by_1.v vlg02/fifo32k__by__1.bin 1542400474
+MO capture NULL ../High_Speed_New_Octal_Interposer/capture.v vlg30/capture.bin 1542400474

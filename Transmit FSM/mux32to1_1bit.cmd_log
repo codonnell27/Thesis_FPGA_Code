@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "Z:/VM_Shared_folder/ThesisD1/mux32to1_1bit.xst" -ofn "Z:/VM_Shared_folder/ThesisD1/mux32to1_1bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 mux32to1_1bit.ngc mux32to1_1bit.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mux32to1_1bit_map.ncd mux32to1_1bit.ngd mux32to1_1bit.pcf 
+par -w -intstyle ise -ol high -mt off mux32to1_1bit_map.ncd mux32to1_1bit.ncd mux32to1_1bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mux32to1_1bit.twx mux32to1_1bit.ncd -o mux32to1_1bit.twr mux32to1_1bit.pcf 
+xst -intstyle ise -ifn "Z:/VM_Shared_folder/ThesisD1/mux32to1_1bit.xst" -ofn "Z:/VM_Shared_folder/ThesisD1/mux32to1_1bit.syr" 
+xst -intstyle ise -ifn "Z:/VM_Shared_folder/ThesisD1/mux32to1_1bit.xst" -ofn "Z:/VM_Shared_folder/ThesisD1/mux32to1_1bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 mux32to1_1bit.ngc mux32to1_1bit.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mux32to1_1bit_map.ncd mux32to1_1bit.ngd mux32to1_1bit.pcf 

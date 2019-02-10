@@ -1,0 +1,14 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'mux32to1_1bit'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o mux32to1_1bit_map.ncd mux32to1_1bit.ngd
+mux32to1_1bit.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon Nov 05 22:16:18 2018

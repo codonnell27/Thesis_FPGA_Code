@@ -1,0 +1,6 @@
+verilog work "../High_Speed_New_Octal_Interposer/fifo32k_by_1.v"
+verilog work "../High_Speed_New_Octal_Interposer/fifo32k.v"
+verilog work "../High_Speed_New_Octal_Interposer/storage.v"
+verilog work "../High_Speed_New_Octal_Interposer/spi_write_8b.v"
+verilog work "../High_Speed_New_Octal_Interposer/capture.v"
+verilog work "../High_Speed_New_Octal_Interposer/Top.v"

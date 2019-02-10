@@ -1,0 +1,5 @@
+verilog work "mux2to1_1bit.v"
+verilog work "mux4to1_1bit.v"
+verilog work "mux8to1_1bit.v"
+verilog work "mux16to1_1bit.v"
+verilog work "mux32to1.v"

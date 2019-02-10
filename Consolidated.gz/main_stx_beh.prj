@@ -1,0 +1,6 @@
+verilog isim_temp "one_btn_debounce.v"
+verilog isim_temp "uart_transmit.v"
+verilog isim_temp "uart_receive.v"
+verilog isim_temp "btn_debouce.v"
+verilog isim_temp "main.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

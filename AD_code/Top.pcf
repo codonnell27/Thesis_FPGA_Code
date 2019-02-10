@@ -1,0 +1,226 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Nov 16 15:35:22 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "chan_c_led" LOCATE = SITE "Y6" LEVEL 1;
+TIMEGRP sclk_in = BEL "U3/count_4" BEL "U3/count_3" BEL "U3/count_2" BEL
+        "U3/count_1" BEL "U3/count_0" BEL "U3/data_2" BEL "U3/data_1" BEL
+        "U3/data_0" BEL "U3/gate" BEL "sclk_buf_BUFG";
+TIMEGRP U1_dcoshifted = BEL "U1/I8/FF0" BEL "U1/I8/FF1" BEL "U1/I8/FF2" BEL
+        "U1/I8/FF3" BEL "U1/I7/FF0" BEL "U1/I7/FF1" BEL "U1/I7/FF2" BEL
+        "U1/I7/FF3" BEL "U1/I6/FF0" BEL "U1/I6/FF1" BEL "U1/I6/FF2" BEL
+        "U1/I6/FF3" BEL "U1/I5/FF0" BEL "U1/I5/FF1" BEL "U1/I5/FF2" BEL
+        "U1/I5/FF3" BEL "U1/I4/FF0" BEL "U1/I4/FF1" BEL "U1/I4/FF2" BEL
+        "U1/I4/FF3" BEL "U1/I3/FF0" BEL "U1/I3/FF1" BEL "U1/I3/FF2" BEL
+        "U1/I3/FF3" BEL "U1/I2/FF0" BEL "U1/I2/FF1" BEL "U1/I2/FF2" BEL
+        "U1/I2/FF3" BEL "U1/I1/FF0" BEL "U1/I1/FF1" BEL "U1/I1/FF2" BEL
+        "U1/I1/FF3" BEL "U1/B3" BEL "U1/count_15" BEL "U1/count_14" BEL
+        "U1/count_13" BEL "U1/count_12" BEL "U1/count_11" BEL "U1/count_10"
+        BEL "U1/count_9" BEL "U1/count_8" BEL "U1/count_7" BEL "U1/count_6"
+        BEL "U1/count_5" BEL "U1/count_4" BEL "U1/count_3" BEL "U1/count_2"
+        BEL "U1/count_1" BEL "U1/count_0" BEL "U1/doutA_11" BEL "U1/doutA_10"
+        BEL "U1/doutA_9" BEL "U1/doutA_8" BEL "U1/doutA_7" BEL "U1/doutA_6"
+        BEL "U1/doutA_5" BEL "U1/doutA_4" BEL "U1/doutA_3" BEL "U1/doutA_2"
+        BEL "U1/doutA_1" BEL "U1/doutA_0" BEL "U1/dout_h_11" BEL
+        "U1/dout_h_10" BEL "U1/dout_h_9" BEL "U1/dout_h_8" BEL "U1/dout_h_7"
+        BEL "U1/dout_h_6" BEL "U1/dout_h_5" BEL "U1/dout_h_4" BEL
+        "U1/dout_h_3" BEL "U1/dout_h_2" BEL "U1/dout_h_1" BEL "U1/dout_h_0"
+        BEL "U1/dout_g_11" BEL "U1/dout_g_10" BEL "U1/dout_g_9" BEL
+        "U1/dout_g_8" BEL "U1/dout_g_7" BEL "U1/dout_g_6" BEL "U1/dout_g_5"
+        BEL "U1/dout_g_4" BEL "U1/dout_g_3" BEL "U1/dout_g_2" BEL
+        "U1/dout_g_1" BEL "U1/dout_g_0" BEL "U1/dout_f_11" BEL "U1/dout_f_10"
+        BEL "U1/dout_f_9" BEL "U1/dout_f_8" BEL "U1/dout_f_7" BEL
+        "U1/dout_f_6" BEL "U1/dout_f_5" BEL "U1/dout_f_4" BEL "U1/dout_f_3"
+        BEL "U1/dout_f_2" BEL "U1/dout_f_1" BEL "U1/dout_f_0" BEL
+        "U1/dout_e_11" BEL "U1/dout_e_10" BEL "U1/dout_e_9" BEL "U1/dout_e_8"
+        BEL "U1/dout_e_7" BEL "U1/dout_e_6" BEL "U1/dout_e_5" BEL
+        "U1/dout_e_4" BEL "U1/dout_e_3" BEL "U1/dout_e_2" BEL "U1/dout_e_1"
+        BEL "U1/dout_e_0" BEL "U1/dout_d_11" BEL "U1/dout_d_10" BEL
+        "U1/dout_d_9" BEL "U1/dout_d_8" BEL "U1/dout_d_7" BEL "U1/dout_d_6"
+        BEL "U1/dout_d_5" BEL "U1/dout_d_4" BEL "U1/dout_d_3" BEL
+        "U1/dout_d_2" BEL "U1/dout_d_1" BEL "U1/dout_d_0" BEL "U1/dout_c_11"
+        BEL "U1/dout_c_10" BEL "U1/dout_c_9" BEL "U1/dout_c_8" BEL
+        "U1/dout_c_7" BEL "U1/dout_c_6" BEL "U1/dout_c_5" BEL "U1/dout_c_4"
+        BEL "U1/dout_c_3" BEL "U1/dout_c_2" BEL "U1/dout_c_1" BEL
+        "U1/dout_c_0" BEL "U1/dout_a_11" BEL "U1/dout_a_10" BEL "U1/dout_a_9"
+        BEL "U1/dout_a_8" BEL "U1/dout_a_7" BEL "U1/dout_a_6" BEL
+        "U1/dout_a_5" BEL "U1/dout_a_4" BEL "U1/dout_a_3" BEL "U1/dout_a_2"
+        BEL "U1/dout_a_1" BEL "U1/dout_a_0" BEL "U1/dout_b_11" BEL
+        "U1/dout_b_10" BEL "U1/dout_b_9" BEL "U1/dout_b_8" BEL "U1/dout_b_7"
+        BEL "U1/dout_b_6" BEL "U1/dout_b_5" BEL "U1/dout_b_4" BEL
+        "U1/dout_b_3" BEL "U1/dout_b_2" BEL "U1/dout_b_1" BEL "U1/dout_b_0"
+        BEL "U1/fcostb" BEL "U1/fco2" BEL "U1/dat_q2_h_5" BEL "U1/dat_q2_h_4"
+        BEL "U1/dat_q2_h_3" BEL "U1/dat_q2_h_2" BEL "U1/dat_q2_h_1" BEL
+        "U1/dat_q2_h_0" BEL "U1/dat_q1_h_5" BEL "U1/dat_q1_h_4" BEL
+        "U1/dat_q1_h_3" BEL "U1/dat_q1_h_2" BEL "U1/dat_q1_h_1" BEL
+        "U1/dat_q1_h_0" BEL "U1/dat_q2_g_5" BEL "U1/dat_q2_g_4" BEL
+        "U1/dat_q2_g_3" BEL "U1/dat_q2_g_2" BEL "U1/dat_q2_g_1" BEL
+        "U1/dat_q2_g_0" BEL "U1/dat_q2_f_5" BEL "U1/dat_q2_f_4" BEL
+        "U1/dat_q2_f_3" BEL "U1/dat_q2_f_2" BEL "U1/dat_q2_f_1" BEL
+        "U1/dat_q2_f_0" BEL "U1/dat_q1_f_5" BEL "U1/dat_q1_f_4" BEL
+        "U1/dat_q1_f_3" BEL "U1/dat_q1_f_2" BEL "U1/dat_q1_f_1" BEL
+        "U1/dat_q1_f_0" BEL "U1/dat_q1_g_5" BEL "U1/dat_q1_g_4" BEL
+        "U1/dat_q1_g_3" BEL "U1/dat_q1_g_2" BEL "U1/dat_q1_g_1" BEL
+        "U1/dat_q1_g_0" BEL "U1/dat_q2_e_5" BEL "U1/dat_q2_e_4" BEL
+        "U1/dat_q2_e_3" BEL "U1/dat_q2_e_2" BEL "U1/dat_q2_e_1" BEL
+        "U1/dat_q2_e_0" BEL "U1/dat_q1_e_5" BEL "U1/dat_q1_e_4" BEL
+        "U1/dat_q1_e_3" BEL "U1/dat_q1_e_2" BEL "U1/dat_q1_e_1" BEL
+        "U1/dat_q1_e_0" BEL "U1/dat_q2_d_5" BEL "U1/dat_q2_d_4" BEL
+        "U1/dat_q2_d_3" BEL "U1/dat_q2_d_2" BEL "U1/dat_q2_d_1" BEL
+        "U1/dat_q2_d_0" BEL "U1/dat_q1_d_5" BEL "U1/dat_q1_d_4" BEL
+        "U1/dat_q1_d_3" BEL "U1/dat_q1_d_2" BEL "U1/dat_q1_d_1" BEL
+        "U1/dat_q1_d_0" BEL "U1/dat_q1_c_5" BEL "U1/dat_q1_c_4" BEL
+        "U1/dat_q1_c_3" BEL "U1/dat_q1_c_2" BEL "U1/dat_q1_c_1" BEL
+        "U1/dat_q1_c_0" BEL "U1/dat_q2_b_5" BEL "U1/dat_q2_b_4" BEL
+        "U1/dat_q2_b_3" BEL "U1/dat_q2_b_2" BEL "U1/dat_q2_b_1" BEL
+        "U1/dat_q2_b_0" BEL "U1/dat_q2_c_5" BEL "U1/dat_q2_c_4" BEL
+        "U1/dat_q2_c_3" BEL "U1/dat_q2_c_2" BEL "U1/dat_q2_c_1" BEL
+        "U1/dat_q2_c_0" BEL "U1/dat_q1_b_5" BEL "U1/dat_q1_b_4" BEL
+        "U1/dat_q1_b_3" BEL "U1/dat_q1_b_2" BEL "U1/dat_q1_b_1" BEL
+        "U1/dat_q1_b_0" BEL "U1/dat_q2_a_5" BEL "U1/dat_q2_a_4" BEL
+        "U1/dat_q2_a_3" BEL "U1/dat_q2_a_2" BEL "U1/dat_q2_a_1" BEL
+        "U1/dat_q2_a_0" BEL "U1/dat_q1_a_5" BEL "U1/dat_q1_a_4" BEL
+        "U1/dat_q1_a_3" BEL "U1/dat_q1_a_2" BEL "U1/dat_q1_a_1" BEL
+        "U1/dat_q1_a_0" BEL "U1/load" BEL "U1/gate" BEL "U1/fco1";
+PIN U2/F1/U00/RAMB16_U1_pins<30> = BEL "U2/F1/U00/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U00/RAMB16_U2_pins<30> = BEL "U2/F1/U00/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U01/RAMB16_U1_pins<30> = BEL "U2/F1/U01/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U01/RAMB16_U2_pins<30> = BEL "U2/F1/U01/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U02/RAMB16_U1_pins<30> = BEL "U2/F1/U02/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U02/RAMB16_U2_pins<30> = BEL "U2/F1/U02/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U03/RAMB16_U1_pins<30> = BEL "U2/F1/U03/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U03/RAMB16_U2_pins<30> = BEL "U2/F1/U03/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U04/RAMB16_U1_pins<30> = BEL "U2/F1/U04/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U04/RAMB16_U2_pins<30> = BEL "U2/F1/U04/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U05/RAMB16_U1_pins<30> = BEL "U2/F1/U05/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U05/RAMB16_U2_pins<30> = BEL "U2/F1/U05/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U06/RAMB16_U1_pins<30> = BEL "U2/F1/U06/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U06/RAMB16_U2_pins<30> = BEL "U2/F1/U06/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U07/RAMB16_U1_pins<30> = BEL "U2/F1/U07/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U07/RAMB16_U2_pins<30> = BEL "U2/F1/U07/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U08/RAMB16_U1_pins<30> = BEL "U2/F1/U08/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U08/RAMB16_U2_pins<30> = BEL "U2/F1/U08/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U09/RAMB16_U1_pins<30> = BEL "U2/F1/U09/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U09/RAMB16_U2_pins<30> = BEL "U2/F1/U09/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U10/RAMB16_U1_pins<30> = BEL "U2/F1/U10/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U10/RAMB16_U2_pins<30> = BEL "U2/F1/U10/RAMB16_U2" PINNAME CLKA;
+PIN U2/F1/U11/RAMB16_U1_pins<30> = BEL "U2/F1/U11/RAMB16_U1" PINNAME CLKA;
+PIN U2/F1/U11/RAMB16_U2_pins<30> = BEL "U2/F1/U11/RAMB16_U2" PINNAME CLKA;
+TIMEGRP U1_clk0f = BEL "U1/B2" BEL "U1/fco1" BEL "U2/F1/U00/wr_addr_14" BEL
+        "U2/F1/U00/wr_addr_13" BEL "U2/F1/U00/wr_addr_12" BEL
+        "U2/F1/U00/wr_addr_11" BEL "U2/F1/U00/wr_addr_10" BEL
+        "U2/F1/U00/wr_addr_9" BEL "U2/F1/U00/wr_addr_8" BEL
+        "U2/F1/U00/wr_addr_7" BEL "U2/F1/U00/wr_addr_6" BEL
+        "U2/F1/U00/wr_addr_5" BEL "U2/F1/U00/wr_addr_4" BEL
+        "U2/F1/U00/wr_addr_3" BEL "U2/F1/U00/wr_addr_2" BEL
+        "U2/F1/U00/wr_addr_1" BEL "U2/F1/U00/wr_addr_0" BEL "U2/F1/U00/full"
+        BEL "U2/F1/U01/wr_addr_14" BEL "U2/F1/U01/wr_addr_13" BEL
+        "U2/F1/U01/wr_addr_12" BEL "U2/F1/U01/wr_addr_11" BEL
+        "U2/F1/U01/wr_addr_10" BEL "U2/F1/U01/wr_addr_9" BEL
+        "U2/F1/U01/wr_addr_8" BEL "U2/F1/U01/wr_addr_7" BEL
+        "U2/F1/U01/wr_addr_6" BEL "U2/F1/U01/wr_addr_5" BEL
+        "U2/F1/U01/wr_addr_4" BEL "U2/F1/U01/wr_addr_3" BEL
+        "U2/F1/U01/wr_addr_2" BEL "U2/F1/U01/wr_addr_1" BEL
+        "U2/F1/U01/wr_addr_0" BEL "U2/F1/U01/full" BEL "U2/F1/U02/wr_addr_14"
+        BEL "U2/F1/U02/wr_addr_13" BEL "U2/F1/U02/wr_addr_12" BEL
+        "U2/F1/U02/wr_addr_11" BEL "U2/F1/U02/wr_addr_10" BEL
+        "U2/F1/U02/wr_addr_9" BEL "U2/F1/U02/wr_addr_8" BEL
+        "U2/F1/U02/wr_addr_7" BEL "U2/F1/U02/wr_addr_6" BEL
+        "U2/F1/U02/wr_addr_5" BEL "U2/F1/U02/wr_addr_4" BEL
+        "U2/F1/U02/wr_addr_3" BEL "U2/F1/U02/wr_addr_2" BEL
+        "U2/F1/U02/wr_addr_1" BEL "U2/F1/U02/wr_addr_0" BEL "U2/F1/U02/full"
+        BEL "U2/F1/U03/wr_addr_14" BEL "U2/F1/U03/wr_addr_13" BEL
+        "U2/F1/U03/wr_addr_12" BEL "U2/F1/U03/wr_addr_11" BEL
+        "U2/F1/U03/wr_addr_10" BEL "U2/F1/U03/wr_addr_9" BEL
+        "U2/F1/U03/wr_addr_8" BEL "U2/F1/U03/wr_addr_7" BEL
+        "U2/F1/U03/wr_addr_6" BEL "U2/F1/U03/wr_addr_5" BEL
+        "U2/F1/U03/wr_addr_4" BEL "U2/F1/U03/wr_addr_3" BEL
+        "U2/F1/U03/wr_addr_2" BEL "U2/F1/U03/wr_addr_1" BEL
+        "U2/F1/U03/wr_addr_0" BEL "U2/F1/U03/full" BEL "U2/F1/U04/wr_addr_14"
+        BEL "U2/F1/U04/wr_addr_13" BEL "U2/F1/U04/wr_addr_12" BEL
+        "U2/F1/U04/wr_addr_11" BEL "U2/F1/U04/wr_addr_10" BEL
+        "U2/F1/U04/wr_addr_9" BEL "U2/F1/U04/wr_addr_8" BEL
+        "U2/F1/U04/wr_addr_7" BEL "U2/F1/U04/wr_addr_6" BEL
+        "U2/F1/U04/wr_addr_5" BEL "U2/F1/U04/wr_addr_4" BEL
+        "U2/F1/U04/wr_addr_3" BEL "U2/F1/U04/wr_addr_2" BEL
+        "U2/F1/U04/wr_addr_1" BEL "U2/F1/U04/wr_addr_0" BEL "U2/F1/U04/full"
+        BEL "U2/F1/U05/wr_addr_14" BEL "U2/F1/U05/wr_addr_13" BEL
+        "U2/F1/U05/wr_addr_12" BEL "U2/F1/U05/wr_addr_11" BEL
+        "U2/F1/U05/wr_addr_10" BEL "U2/F1/U05/wr_addr_9" BEL
+        "U2/F1/U05/wr_addr_8" BEL "U2/F1/U05/wr_addr_7" BEL
+        "U2/F1/U05/wr_addr_6" BEL "U2/F1/U05/wr_addr_5" BEL
+        "U2/F1/U05/wr_addr_4" BEL "U2/F1/U05/wr_addr_3" BEL
+        "U2/F1/U05/wr_addr_2" BEL "U2/F1/U05/wr_addr_1" BEL
+        "U2/F1/U05/wr_addr_0" BEL "U2/F1/U05/full" BEL "U2/F1/U06/wr_addr_14"
+        BEL "U2/F1/U06/wr_addr_13" BEL "U2/F1/U06/wr_addr_12" BEL
+        "U2/F1/U06/wr_addr_11" BEL "U2/F1/U06/wr_addr_10" BEL
+        "U2/F1/U06/wr_addr_9" BEL "U2/F1/U06/wr_addr_8" BEL
+        "U2/F1/U06/wr_addr_7" BEL "U2/F1/U06/wr_addr_6" BEL
+        "U2/F1/U06/wr_addr_5" BEL "U2/F1/U06/wr_addr_4" BEL
+        "U2/F1/U06/wr_addr_3" BEL "U2/F1/U06/wr_addr_2" BEL
+        "U2/F1/U06/wr_addr_1" BEL "U2/F1/U06/wr_addr_0" BEL "U2/F1/U06/full"
+        BEL "U2/F1/U07/wr_addr_14" BEL "U2/F1/U07/wr_addr_13" BEL
+        "U2/F1/U07/wr_addr_12" BEL "U2/F1/U07/wr_addr_11" BEL
+        "U2/F1/U07/wr_addr_10" BEL "U2/F1/U07/wr_addr_9" BEL
+        "U2/F1/U07/wr_addr_8" BEL "U2/F1/U07/wr_addr_7" BEL
+        "U2/F1/U07/wr_addr_6" BEL "U2/F1/U07/wr_addr_5" BEL
+        "U2/F1/U07/wr_addr_4" BEL "U2/F1/U07/wr_addr_3" BEL
+        "U2/F1/U07/wr_addr_2" BEL "U2/F1/U07/wr_addr_1" BEL
+        "U2/F1/U07/wr_addr_0" BEL "U2/F1/U07/full" BEL "U2/F1/U08/wr_addr_14"
+        BEL "U2/F1/U08/wr_addr_13" BEL "U2/F1/U08/wr_addr_12" BEL
+        "U2/F1/U08/wr_addr_11" BEL "U2/F1/U08/wr_addr_10" BEL
+        "U2/F1/U08/wr_addr_9" BEL "U2/F1/U08/wr_addr_8" BEL
+        "U2/F1/U08/wr_addr_7" BEL "U2/F1/U08/wr_addr_6" BEL
+        "U2/F1/U08/wr_addr_5" BEL "U2/F1/U08/wr_addr_4" BEL
+        "U2/F1/U08/wr_addr_3" BEL "U2/F1/U08/wr_addr_2" BEL
+        "U2/F1/U08/wr_addr_1" BEL "U2/F1/U08/wr_addr_0" BEL "U2/F1/U08/full"
+        BEL "U2/F1/U09/wr_addr_14" BEL "U2/F1/U09/wr_addr_13" BEL
+        "U2/F1/U09/wr_addr_12" BEL "U2/F1/U09/wr_addr_11" BEL
+        "U2/F1/U09/wr_addr_10" BEL "U2/F1/U09/wr_addr_9" BEL
+        "U2/F1/U09/wr_addr_8" BEL "U2/F1/U09/wr_addr_7" BEL
+        "U2/F1/U09/wr_addr_6" BEL "U2/F1/U09/wr_addr_5" BEL
+        "U2/F1/U09/wr_addr_4" BEL "U2/F1/U09/wr_addr_3" BEL
+        "U2/F1/U09/wr_addr_2" BEL "U2/F1/U09/wr_addr_1" BEL
+        "U2/F1/U09/wr_addr_0" BEL "U2/F1/U09/full" BEL "U2/F1/U10/wr_addr_14"
+        BEL "U2/F1/U10/wr_addr_13" BEL "U2/F1/U10/wr_addr_12" BEL
+        "U2/F1/U10/wr_addr_11" BEL "U2/F1/U10/wr_addr_10" BEL
+        "U2/F1/U10/wr_addr_9" BEL "U2/F1/U10/wr_addr_8" BEL
+        "U2/F1/U10/wr_addr_7" BEL "U2/F1/U10/wr_addr_6" BEL
+        "U2/F1/U10/wr_addr_5" BEL "U2/F1/U10/wr_addr_4" BEL
+        "U2/F1/U10/wr_addr_3" BEL "U2/F1/U10/wr_addr_2" BEL
+        "U2/F1/U10/wr_addr_1" BEL "U2/F1/U10/wr_addr_0" BEL "U2/F1/U10/full"
+        BEL "U2/F1/U11/wr_addr_14" BEL "U2/F1/U11/wr_addr_13" BEL
+        "U2/F1/U11/wr_addr_12" BEL "U2/F1/U11/wr_addr_11" BEL
+        "U2/F1/U11/wr_addr_10" BEL "U2/F1/U11/wr_addr_9" BEL
+        "U2/F1/U11/wr_addr_8" BEL "U2/F1/U11/wr_addr_7" BEL
+        "U2/F1/U11/wr_addr_6" BEL "U2/F1/U11/wr_addr_5" BEL
+        "U2/F1/U11/wr_addr_4" BEL "U2/F1/U11/wr_addr_3" BEL
+        "U2/F1/U11/wr_addr_2" BEL "U2/F1/U11/wr_addr_1" BEL
+        "U2/F1/U11/wr_addr_0" BEL "U2/F1/U11/full" PIN
+        "U2/F1/U00/RAMB16_U1_pins<30>" PIN "U2/F1/U00/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U01/RAMB16_U1_pins<30>" PIN "U2/F1/U01/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U02/RAMB16_U1_pins<30>" PIN "U2/F1/U02/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U03/RAMB16_U1_pins<30>" PIN "U2/F1/U03/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U04/RAMB16_U1_pins<30>" PIN "U2/F1/U04/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U05/RAMB16_U1_pins<30>" PIN "U2/F1/U05/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U06/RAMB16_U1_pins<30>" PIN "U2/F1/U06/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U07/RAMB16_U1_pins<30>" PIN "U2/F1/U07/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U08/RAMB16_U1_pins<30>" PIN "U2/F1/U08/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U09/RAMB16_U1_pins<30>" PIN "U2/F1/U09/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U10/RAMB16_U1_pins<30>" PIN "U2/F1/U10/RAMB16_U2_pins<30>" PIN
+        "U2/F1/U11/RAMB16_U1_pins<30>" PIN "U2/F1/U11/RAMB16_U2_pins<30>";
+PIN DCM_AUTOCALIBRATION_U1/DCM1/U1/DCM1_pins<3> = BEL
+        "DCM_AUTOCALIBRATION_U1/DCM1/U1/DCM1" PINNAME CLKIN;
+TIMEGRP dco_p = PIN "DCM_AUTOCALIBRATION_U1/DCM1/U1/DCM1_pins<3>";
+PIN DCM_AUTOCALIBRATION_U1/DCM2/U1/DCM2_pins<2> = BEL
+        "DCM_AUTOCALIBRATION_U1/DCM2/U1/DCM2" PINNAME CLKIN;
+TIMEGRP fco_p = PIN "DCM_AUTOCALIBRATION_U1/DCM2/U1/DCM2_pins<2>";
+TS_dco_p = PERIOD TIMEGRP "dco_p" 390 MHz HIGH 50%;
+TS_fco_p = PERIOD TIMEGRP "fco_p" 65 MHz HIGH 50%;
+TS_sclk_in = PERIOD TIMEGRP "sclk_in" 8 ns HIGH 66%;
+TS_U1_dcoshifted = PERIOD TIMEGRP "U1_dcoshifted" TS_dco_p PHASE 0.641025641
+        ns HIGH 50%;
+TS_U1_clk0f = PERIOD TIMEGRP "U1_clk0f" TS_fco_p HIGH 50%;
+SCHEMATIC END;
+

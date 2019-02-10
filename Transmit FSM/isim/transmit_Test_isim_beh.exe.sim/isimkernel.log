@@ -1,0 +1,10 @@
+Command line:
+   transmit_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49422
+
+Mon Nov 05 22:26:24 2018
+
+
+ Elaboration Time: 0.125 sec

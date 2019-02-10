@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\VM_Shared_folder\AD_code\Top.ncd
+OUTFILE=Z:\VM_Shared_folder\AD_code\Top.bit
+FAMILY=Virtex4
+PART=xc4vfx12-10ff668
+WORKINGDIR=Z:\VM_Shared_folder\AD_code
+LICENSE=WebPack
+USER_INFO=207362390_1777509885_0_951

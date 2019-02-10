@@ -1,0 +1,5 @@
+verilog isim_temp "look_up.v"
+verilog isim_temp "Transmit_counter.v"
+verilog isim_temp "transmit_fsm.v"
+verilog isim_temp "transmit_Test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

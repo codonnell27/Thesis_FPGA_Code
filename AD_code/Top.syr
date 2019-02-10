@@ -1,0 +1,1077 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.50 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.50 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc4vfx12-10-ff668
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../High_Speed_New_Octal_Interposer/fifo32k_by_1.v" in library work
+Compiling verilog file "../High_Speed_New_Octal_Interposer/fifo32k.v" in library work
+Module <fifo32k_by_1> compiled
+Compiling verilog file "../High_Speed_New_Octal_Interposer/storage.v" in library work
+Module <fifo32k> compiled
+Compiling verilog file "../High_Speed_New_Octal_Interposer/spi_write_8b.v" in library work
+Module <storage> compiled
+Compiling verilog file "../High_Speed_New_Octal_Interposer/capture.v" in library work
+Module <spi_write_8b> compiled
+Compiling verilog file "../High_Speed_New_Octal_Interposer/Top.v" in library work
+Module <capture> compiled
+Module <Top> compiled
+No errors in compilation
+Analysis of file <"Top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Top> in library <work>.
+
+Analyzing hierarchy for module <spi_write_8b> in library <work>.
+
+Analyzing hierarchy for module <capture> in library <work>.
+
+Analyzing hierarchy for module <storage> in library <work>.
+
+Analyzing hierarchy for module <fifo32k> in library <work>.
+
+Analyzing hierarchy for module <fifo32k_by_1> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Top>.
+Module <Top> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IBUF_1> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IBUF_1> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IBUF_1> in unit <Top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IBUF_1> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IBUF_1> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IBUF_2> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IBUF_2> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IBUF_2> in unit <Top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IBUF_2> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IBUF_2> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IBUF_3> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IBUF_3> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IBUF_3> in unit <Top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IBUF_3> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IBUF_3> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I36> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I36> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <I36> in unit <Top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I36> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I36> in unit <Top>.
+Analyzing module <spi_write_8b> in library <work>.
+Module <spi_write_8b> is correct for synthesis.
+ 
+Analyzing module <capture> in library <work>.
+Module <capture> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB1> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB1> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB1> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB1> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB1> in unit <capture>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB2> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB2> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB2> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB2> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB2> in unit <capture>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB3> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB3> in unit <capture>.
+    Set user-defined property "DQS_BIAS =  FALSE" for instance <IB3> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB3> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB3> in unit <capture>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IB3> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB3> in unit <capture>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB4> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB4> in unit <capture>.
+    Set user-defined property "DQS_BIAS =  FALSE" for instance <IB4> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB4> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB4> in unit <capture>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IB4> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB4> in unit <capture>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB5> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB5> in unit <capture>.
+    Set user-defined property "DQS_BIAS =  FALSE" for instance <IB5> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB5> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB5> in unit <capture>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IB5> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB5> in unit <capture>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB6> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB6> in unit <capture>.
+    Set user-defined property "DQS_BIAS =  FALSE" for instance <IB6> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB6> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB6> in unit <capture>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IB6> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB6> in unit <capture>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB7> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB7> in unit <capture>.
+    Set user-defined property "DQS_BIAS =  FALSE" for instance <IB7> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB7> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB7> in unit <capture>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IB7> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB7> in unit <capture>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB8> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB8> in unit <capture>.
+    Set user-defined property "DQS_BIAS =  FALSE" for instance <IB8> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB8> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB8> in unit <capture>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IB8> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB8> in unit <capture>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB9> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB9> in unit <capture>.
+    Set user-defined property "DQS_BIAS =  FALSE" for instance <IB9> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB9> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB9> in unit <capture>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IB9> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB9> in unit <capture>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IB10> in unit <capture>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <IB10> in unit <capture>.
+    Set user-defined property "DQS_BIAS =  FALSE" for instance <IB10> in unit <capture>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IB10> in unit <capture>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IB10> in unit <capture>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IB10> in unit <capture>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <IB10> in unit <capture>.
+    Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <DCM1> in unit <capture>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM1> in unit <capture>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM1> in unit <capture>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM1> in unit <capture>.
+    Set user-defined property "CLKIN_PERIOD =  10.000000" for instance <DCM1> in unit <capture>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  FIXED" for instance <DCM1> in unit <capture>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM1> in unit <capture>.
+    Set user-defined property "DCM_AUTOCALIBRATION =  TRUE" for instance <DCM1> in unit <capture>.
+    Set user-defined property "DCM_PERFORMANCE_MODE =  MAX_SPEED" for instance <DCM1> in unit <capture>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM1> in unit <capture>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM1> in unit <capture>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM1> in unit <capture>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM1> in unit <capture>.
+    Set user-defined property "FACTORY_JF =  F0F0" for instance <DCM1> in unit <capture>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM1> in unit <capture>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM1> in unit <capture>.
+    Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <DCM2> in unit <capture>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM2> in unit <capture>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM2> in unit <capture>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM2> in unit <capture>.
+    Set user-defined property "CLKIN_PERIOD =  10.000000" for instance <DCM2> in unit <capture>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM2> in unit <capture>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM2> in unit <capture>.
+    Set user-defined property "DCM_AUTOCALIBRATION =  TRUE" for instance <DCM2> in unit <capture>.
+    Set user-defined property "DCM_PERFORMANCE_MODE =  MAX_SPEED" for instance <DCM2> in unit <capture>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM2> in unit <capture>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM2> in unit <capture>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM2> in unit <capture>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM2> in unit <capture>.
+    Set user-defined property "FACTORY_JF =  F0F0" for instance <DCM2> in unit <capture>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM2> in unit <capture>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM2> in unit <capture>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <I1> in unit <capture>.
+    Set user-defined property "INIT_Q1 =  0" for instance <I1> in unit <capture>.
+    Set user-defined property "INIT_Q2 =  0" for instance <I1> in unit <capture>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <I1> in unit <capture>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <I2> in unit <capture>.
+    Set user-defined property "INIT_Q1 =  0" for instance <I2> in unit <capture>.
+    Set user-defined property "INIT_Q2 =  0" for instance <I2> in unit <capture>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <I2> in unit <capture>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <I3> in unit <capture>.
+    Set user-defined property "INIT_Q1 =  0" for instance <I3> in unit <capture>.
+    Set user-defined property "INIT_Q2 =  0" for instance <I3> in unit <capture>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <I3> in unit <capture>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <I4> in unit <capture>.
+    Set user-defined property "INIT_Q1 =  0" for instance <I4> in unit <capture>.
+    Set user-defined property "INIT_Q2 =  0" for instance <I4> in unit <capture>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <I4> in unit <capture>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <I5> in unit <capture>.
+    Set user-defined property "INIT_Q1 =  0" for instance <I5> in unit <capture>.
+    Set user-defined property "INIT_Q2 =  0" for instance <I5> in unit <capture>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <I5> in unit <capture>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <I6> in unit <capture>.
+    Set user-defined property "INIT_Q1 =  0" for instance <I6> in unit <capture>.
+    Set user-defined property "INIT_Q2 =  0" for instance <I6> in unit <capture>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <I6> in unit <capture>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <I7> in unit <capture>.
+    Set user-defined property "INIT_Q1 =  0" for instance <I7> in unit <capture>.
+    Set user-defined property "INIT_Q2 =  0" for instance <I7> in unit <capture>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <I7> in unit <capture>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <I8> in unit <capture>.
+    Set user-defined property "INIT_Q1 =  0" for instance <I8> in unit <capture>.
+    Set user-defined property "INIT_Q2 =  0" for instance <I8> in unit <capture>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <I8> in unit <capture>.
+Analyzing module <storage> in library <work>.
+Module <storage> is correct for synthesis.
+ 
+Analyzing module <fifo32k> in library <work>.
+Module <fifo32k> is correct for synthesis.
+ 
+Analyzing module <fifo32k_by_1> in library <work>.
+Module <fifo32k_by_1> is correct for synthesis.
+ 
+    Set user-defined property "DOA_REG =  0" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "DOB_REG =  0" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_A =  000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_B =  000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_FILE =  NONE" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INVERT_CLK_DOA_REG =  FALSE" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "INVERT_CLK_DOB_REG =  FALSE" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "READ_WIDTH_A =  1" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "READ_WIDTH_B =  1" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "SIM_COLLISION_CHECK =  ALL" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "SRVAL_A =  000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "SRVAL_B =  000000000" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "WRITE_WIDTH_A =  1" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "WRITE_WIDTH_B =  1" for instance <RAMB16_U1> in unit <fifo32k_by_1>.
+    Set user-defined property "DOA_REG =  0" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "DOB_REG =  0" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_A =  000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_B =  000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INIT_FILE =  NONE" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INVERT_CLK_DOA_REG =  FALSE" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "INVERT_CLK_DOB_REG =  FALSE" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "READ_WIDTH_A =  1" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "READ_WIDTH_B =  1" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "SIM_COLLISION_CHECK =  ALL" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "SRVAL_A =  000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "SRVAL_B =  000000000" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "WRITE_WIDTH_A =  1" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+    Set user-defined property "WRITE_WIDTH_B =  1" for instance <RAMB16_U2> in unit <fifo32k_by_1>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <spi_write_8b>.
+    Related source file is "../High_Speed_New_Octal_Interposer/spi_write_8b.v".
+    Found 8-bit register for signal <cntrl_bits>.
+    Found 5-bit up counter for signal <count>.
+    Found 8-bit register for signal <data>.
+    Found 1-bit register for signal <gate>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  17 D-type flip-flop(s).
+Unit <spi_write_8b> synthesized.
+
+
+Synthesizing Unit <capture>.
+    Related source file is "../High_Speed_New_Octal_Interposer/capture.v".
+    Found 1-bit register for signal <load>.
+    Found 14-bit register for signal <doutA>.
+    Found 14-bit register for signal <doutB>.
+    Found 16-bit up counter for signal <count>.
+    Found 7-bit register for signal <dat_q1_a>.
+    Found 7-bit register for signal <dat_q1_b>.
+    Found 7-bit register for signal <dat_q1_c>.
+    Found 7-bit register for signal <dat_q1_d>.
+    Found 7-bit register for signal <dat_q1_e>.
+    Found 7-bit register for signal <dat_q1_f>.
+    Found 7-bit register for signal <dat_q1_g>.
+    Found 7-bit register for signal <dat_q1_h>.
+    Found 7-bit register for signal <dat_q2_a>.
+    Found 7-bit register for signal <dat_q2_b>.
+    Found 7-bit register for signal <dat_q2_c>.
+    Found 7-bit register for signal <dat_q2_d>.
+    Found 7-bit register for signal <dat_q2_e>.
+    Found 7-bit register for signal <dat_q2_f>.
+    Found 7-bit register for signal <dat_q2_g>.
+    Found 7-bit register for signal <dat_q2_h>.
+    Found 14-bit register for signal <dout_a>.
+    Found 14-bit register for signal <dout_b>.
+    Found 14-bit register for signal <dout_c>.
+    Found 14-bit register for signal <dout_d>.
+    Found 14-bit register for signal <dout_e>.
+    Found 14-bit register for signal <dout_f>.
+    Found 14-bit register for signal <dout_g>.
+    Found 14-bit register for signal <dout_h>.
+    Found 14-bit 8-to-1 multiplexer for signal <doutA$mux0000> created at line 269.
+    Found 14-bit 8-to-1 multiplexer for signal <doutB$mux0000> created at line 283.
+    Found 1-bit register for signal <fco1>.
+    Found 1-bit register for signal <fco2>.
+    Found 1-bit register for signal <fcostb>.
+    Found 1-bit register for signal <gate>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 257 D-type flip-flop(s).
+	inferred  28 Multiplexer(s).
+Unit <capture> synthesized.
+
+
+Synthesizing Unit <fifo32k_by_1>.
+    Related source file is "../High_Speed_New_Octal_Interposer/fifo32k_by_1.v".
+    Found 1-bit register for signal <full>.
+    Found 15-bit up counter for signal <rd_addr>.
+    Found 1-bit register for signal <rd_sel>.
+    Found 15-bit up counter for signal <wr_addr>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <fifo32k_by_1> synthesized.
+
+
+Synthesizing Unit <fifo32k>.
+    Related source file is "../High_Speed_New_Octal_Interposer/fifo32k.v".
+WARNING:Xst:647 - Input <bw_bits> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <dout_13> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dout_12> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <sel>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <fifo32k> synthesized.
+
+
+Synthesizing Unit <storage>.
+    Related source file is "../High_Speed_New_Octal_Interposer/storage.v".
+WARNING:Xst:647 - Input <dinB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <doutB> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+    Found 16-bit register for signal <dout>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <storage> synthesized.
+
+
+Synthesizing Unit <Top>.
+    Related source file is "../High_Speed_New_Octal_Interposer/Top.v".
+Unit <Top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 30
+ 15-bit up counter                                     : 28
+ 16-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 71
+ 1-bit register                                        : 43
+ 14-bit register                                       : 10
+ 16-bit register                                       : 1
+ 7-bit register                                        : 16
+ 8-bit register                                        : 1
+# Multiplexers                                         : 2
+ 14-bit 8-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <dout_0> in Unit <U2> is equivalent to the following 3 FFs/Latches, which will be removed : <dout_1> <dout_2> <dout_3> 
+WARNING:Xst:1710 - FF/Latch <dout_0> (without init value) has a constant value of 0 in block <U2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <data_3> of sequential type is unconnected in block <U3>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <U3>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <U3>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <U3>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <U3>.
+WARNING:Xst:2677 - Node <cntrl_bits_3> of sequential type is unconnected in block <U3>.
+WARNING:Xst:2677 - Node <cntrl_bits_4> of sequential type is unconnected in block <U3>.
+WARNING:Xst:2677 - Node <cntrl_bits_5> of sequential type is unconnected in block <U3>.
+WARNING:Xst:2677 - Node <cntrl_bits_6> of sequential type is unconnected in block <U3>.
+WARNING:Xst:2677 - Node <cntrl_bits_7> of sequential type is unconnected in block <U3>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 30
+ 15-bit up counter                                     : 28
+ 16-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 319
+ Flip-Flops                                            : 319
+# Multiplexers                                         : 28
+ 1-bit 8-to-1 multiplexer                              : 28
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance DCM1 in unit capture of type DCM_BASE has been replaced by DCM_ADV
+INFO:Xst:1901 - Instance DCM2 in unit capture of type DCM_BASE has been replaced by DCM_ADV
+
+Optimizing unit <Top> ...
+
+Optimizing unit <spi_write_8b> ...
+
+Optimizing unit <capture> ...
+
+Optimizing unit <fifo32k_by_1> ...
+
+Optimizing unit <fifo32k> ...
+
+Optimizing unit <storage> ...
+WARNING:Xst:1710 - FF/Latch <U2/dout_3> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U2/dout_2> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U2/dout_1> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U2/dout_0> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <U3/cntrl_bits_7> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U3/cntrl_bits_6> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U3/cntrl_bits_5> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U3/cntrl_bits_4> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U3/cntrl_bits_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U3/data_7> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U3/data_6> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U3/data_5> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U3/data_4> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U3/data_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_13> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_12> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_11> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_10> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_9> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_8> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_7> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_6> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_5> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_4> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U1/doutB_0> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U2/F1/U12/rd_addr_14> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U2/F1/U12/rd_sel> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U2/F1/U13/rd_addr_14> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <U2/F1/U13/rd_sel> of sequential type is unconnected in block <Top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 7.
+FlipFlop U2/F1/sel has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 729
+ Flip-Flops                                            : 729
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top.ngr
+Top Level Output File Name         : Top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 48
+
+Cell Usage :
+# BELS                             : 1637
+#      GND                         : 1
+#      INV                         : 39
+#      LUT1                        : 406
+#      LUT2                        : 14
+#      LUT3                        : 89
+#      LUT3_L                      : 12
+#      LUT4                        : 186
+#      LUT4_L                      : 2
+#      MUXCY                       : 410
+#      MUXF5                       : 29
+#      MUXF6                       : 14
+#      VCC                         : 1
+#      XORCY                       : 434
+# FlipFlops/Latches                : 737
+#      FD                          : 143
+#      FDC                         : 100
+#      FDCE                        : 320
+#      FDE                         : 142
+#      FDR                         : 6
+#      FDRE                        : 17
+#      FDSE                        : 1
+#      IDDR                        : 8
+# RAMS                             : 28
+#      RAMB16                      : 28
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 38
+#      IBUF                        : 8
+#      IBUFDS                      : 8
+#      IBUFGDS                     : 2
+#      OBUF                        : 20
+# DCM_ADVs                         : 2
+#      DCM_ADV                     : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx12ff668-10 
+
+ Number of Slices:                      483  out of   5472     8%  
+ Number of Slice Flip Flops:            737  out of  10944     6%  
+ Number of 4 input LUTs:                748  out of  10944     6%  
+ Number of IOs:                          48
+ Number of bonded IOBs:                  48  out of    320    15%  
+ Number of FIFO16/RAMB16s:               28  out of     36    77%  
+    Number used as RAMB16s:              28
+ Number of GCLKs:                         6  out of     32    18%  
+ Number of DCM_ADVs:                      2  out of      4    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sclk_in                            | IBUF+BUFG              | 9     |
+csb_in                             | IBUF+BUFG              | 3     |
+dco_p                              | U1/DCM1:CLK90          | 267   |
+rclk                               | IBUF+BUFG              | 262   |
+fco_p                              | U1/DCM2:CLK0           | 252   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+--------------------------+-------+
+Control Signal                     | Buffer(FF name)          | Load  |
+-----------------------------------+--------------------------+-------+
+U1_not0000(U1_not00001_INV_0:O)    | NONE(U2/F1/U00/rd_addr_0)| 420   |
+-----------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 4.641ns (Maximum Frequency: 215.462MHz)
+   Minimum input arrival time before clock: 6.702ns
+   Maximum output required time after clock: 5.793ns
+   Maximum combinational path delay: 6.978ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sclk_in'
+  Clock period: 2.781ns (frequency: 359.602MHz)
+  Total number of paths / destination ports: 34 / 16
+-------------------------------------------------------------------------
+Delay:               2.781ns (Levels of Logic = 2)
+  Source:            U3/count_2 (FF)
+  Destination:       U3/gate (FF)
+  Source Clock:      sclk_in rising
+  Destination Clock: sclk_in rising
+
+  Data Path: U3/count_2 to U3/gate
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.360   0.608  U3/count_2 (U3/count_2)
+     LUT2:I0->O            1   0.195   0.523  U3/gate_cmp_eq0000_SW0 (N0)
+     LUT4:I3->O            1   0.195   0.360  U3/gate_cmp_eq0000 (U3/gate_cmp_eq0000)
+     FDSE:CE                   0.540          U3/gate
+    ----------------------------------------
+    Total                      2.781ns (1.290ns logic, 1.491ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dco_p'
+  Clock period: 3.569ns (frequency: 280.215MHz)
+  Total number of paths / destination ports: 620 / 385
+-------------------------------------------------------------------------
+Delay:               3.569ns (Levels of Logic = 2)
+  Source:            U1/fcostb (FF)
+  Destination:       U1/gate (FF)
+  Source Clock:      dco_p rising +90
+  Destination Clock: dco_p rising +90
+
+  Data Path: U1/fcostb to U1/gate
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q            144   0.360   1.529  U1/fcostb (U1/fcostb)
+     LUT4:I3->O            1   0.195   0.000  U1/gate_not0001_wg_lut<4> (U1/gate_not0001_wg_lut<4>)
+     MUXCY:S->O            1   0.585   0.360  U1/gate_not0001_wg_cy<4> (U1/gate_not0001)
+     FDRE:CE                   0.540          U1/gate
+    ----------------------------------------
+    Total                      3.569ns (1.680ns logic, 1.889ns route)
+                                       (47.1% logic, 52.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'rclk'
+  Clock period: 4.641ns (frequency: 215.462MHz)
+  Total number of paths / destination ports: 2396 / 734
+-------------------------------------------------------------------------
+Delay:               2.321ns (Levels of Logic = 1)
+  Source:            U2/F1/sel_1 (FF)
+  Destination:       U2/F1/U00/rd_addr_14 (FF)
+  Source Clock:      rclk rising
+  Destination Clock: rclk falling
+
+  Data Path: U2/F1/sel_1 to U2/F1/U00/rd_addr_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.360   0.632  U2/F1/sel_1 (U2/F1/sel_1)
+     LUT2:I1->O           16   0.195   0.593  U2/F1/_and00001_1 (U2/F1/_and00001)
+     FDCE:CE                   0.540          U2/F1/U09/rd_addr_7
+    ----------------------------------------
+    Total                      2.321ns (1.095ns logic, 1.226ns route)
+                                       (47.2% logic, 52.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fco_p'
+  Clock period: 4.059ns (frequency: 246.366MHz)
+  Total number of paths / destination ports: 5656 / 938
+-------------------------------------------------------------------------
+Delay:               4.059ns (Levels of Logic = 3)
+  Source:            U2/F1/U00/wr_addr_11 (FF)
+  Destination:       U2/F1/U00/wr_addr_14 (FF)
+  Source Clock:      fco_p rising
+  Destination Clock: fco_p rising
+
+  Data Path: U2/F1/U00/wr_addr_11 to U2/F1/U00/wr_addr_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.360   0.755  U2/F1/U00/wr_addr_11 (U2/F1/U00/wr_addr_11)
+     LUT4:I0->O            1   0.195   0.688  U2/F1/U00/full_and00007 (U2/F1/U00/full_and00007)
+     LUT4:I1->O            2   0.195   0.540  U2/F1/U00/full_and000033 (U2/F1/U00/full_and0000)
+     LUT4:I3->O           15   0.195   0.591  U2/F1/U00/wr_addr_and00001 (U2/F1/U00/wr_addr_and0000)
+     FDCE:CE                   0.540          U2/F1/U00/wr_addr_0
+    ----------------------------------------
+    Total                      4.059ns (1.485ns logic, 2.574ns route)
+                                       (36.6% logic, 63.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sclk_in'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.105ns (Levels of Logic = 2)
+  Source:            csb_in (PAD)
+  Destination:       U3/gate (FF)
+  Destination Clock: sclk_in rising
+
+  Data Path: csb_in to U3/gate
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.965   0.360  IBUF_2 (csb_buf1)
+     INV:I->O              1   0.358   0.360  U3/csb_inv1_INV_0 (U3/csb_inv)
+     FDSE:S                    1.062          U3/gate
+    ----------------------------------------
+    Total                      3.105ns (2.385ns logic, 0.720ns route)
+                                       (76.8% logic, 23.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'dco_p'
+  Total number of paths / destination ports: 34 / 26
+-------------------------------------------------------------------------
+Offset:              6.702ns (Levels of Logic = 1)
+  Source:            din_hp (PAD)
+  Destination:       U1/I8 (FF)
+  Destination Clock: dco_p rising +90
+
+  Data Path: din_hp to U1/I8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           1   0.965   0.360  U1/IB10 (U1/din_h)
+     IDDR:D                    5.377          U1/I8
+    ----------------------------------------
+    Total                      6.702ns (6.342ns logic, 0.360ns route)
+                                       (94.6% logic, 5.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rclk'
+  Total number of paths / destination ports: 272 / 260
+-------------------------------------------------------------------------
+Offset:              4.724ns (Levels of Logic = 2)
+  Source:            _mr (PAD)
+  Destination:       U2/F1/U00/RAMB16_U2 (RAM)
+  Destination Clock: rclk rising
+
+  Data Path: _mr to U2/F1/U00/RAMB16_U2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.965   0.360  &mr_IBUF (&mr_IBUF)
+     INV:I->O            493   0.358   2.730  U1_not00001_INV_0 (U1_not0000)
+     RAMB16:SSRB               0.311          U2/F1/U00/RAMB16_U2
+    ----------------------------------------
+    Total                      4.724ns (1.634ns logic, 3.090ns route)
+                                       (34.6% logic, 65.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'fco_p'
+  Total number of paths / destination ports: 28 / 28
+-------------------------------------------------------------------------
+Offset:              4.724ns (Levels of Logic = 2)
+  Source:            _mr (PAD)
+  Destination:       U2/F1/U00/RAMB16_U2 (RAM)
+  Destination Clock: fco_p rising
+
+  Data Path: _mr to U2/F1/U00/RAMB16_U2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.965   0.360  &mr_IBUF (&mr_IBUF)
+     INV:I->O            493   0.358   2.730  U1_not00001_INV_0 (U1_not0000)
+     RAMB16:SSRA               0.311          U2/F1/U00/RAMB16_U2
+    ----------------------------------------
+    Total                      4.724ns (1.634ns logic, 3.090ns route)
+                                       (34.6% logic, 65.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dco_p'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.793ns (Levels of Logic = 2)
+  Source:            U1/load (FF)
+  Destination:       chan_a_led (PAD)
+  Source Clock:      dco_p rising +90
+
+  Data Path: U1/load to chan_a_led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.360   0.921  U1/load (U1/load)
+     LUT3:I0->O            1   0.195   0.360  chan_a_led1 (chan_a_led_OBUF)
+     OBUF:I->O                 3.957          chan_a_led_OBUF (chan_a_led)
+    ----------------------------------------
+    Total                      5.793ns (4.512ns logic, 1.281ns route)
+                                       (77.9% logic, 22.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'rclk'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.677ns (Levels of Logic = 1)
+  Source:            U2/dout_15 (FF)
+  Destination:       dout<15> (PAD)
+  Source Clock:      rclk rising
+
+  Data Path: U2/dout_15 to dout<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.360   0.360  U2/dout_15 (U2/dout_15)
+     OBUF:I->O                 3.957          dout_15_OBUF (dout<15>)
+    ----------------------------------------
+    Total                      4.677ns (4.317ns logic, 0.360ns route)
+                                       (92.3% logic, 7.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Delay:               6.978ns (Levels of Logic = 3)
+  Source:            _renA (PAD)
+  Destination:       chan_d_led (PAD)
+
+  Data Path: _renA to chan_d_led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           121   0.965   1.501  &renA_IBUF (&renA_IBUF)
+     LUT2:I0->O            1   0.195   0.360  chan_d_led1 (chan_d_led_OBUF)
+     OBUF:I->O                 3.957          chan_d_led_OBUF (chan_d_led)
+    ----------------------------------------
+    Total                      6.978ns (5.117ns logic, 1.861ns route)
+                                       (73.3% logic, 26.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.14 secs
+ 
+--> 
+
+Total memory usage is 232444 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   76 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

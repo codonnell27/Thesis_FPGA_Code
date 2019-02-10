@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=Z:\VM_Shared_folder\Atlys_ISE_GPIO_UART\impact.xsl
+OUTFILE=Z:\VM_Shared_folder\Atlys_ISE_GPIO_UART\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=Z:\VM_Shared_folder\Atlys_ISE_GPIO_UART
+LICENSE=iMPACT
+USER_INFO=iMPACT

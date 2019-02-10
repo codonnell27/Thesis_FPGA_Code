@@ -1,0 +1,89 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml mux32to1_1bit.twx mux32to1_1bit.ncd -o mux32to1_1bit.twr
+mux32to1_1bit.pcf
+
+Design file:              mux32to1_1bit.ncd
+Physical constraint file: mux32to1_1bit.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a0             |out            |    7.576|
+a1             |out            |    7.432|
+a2             |out            |    8.054|
+a3             |out            |    8.006|
+a4             |out            |    7.936|
+a5             |out            |    7.412|
+a6             |out            |    7.984|
+a7             |out            |    9.810|
+a8             |out            |    7.356|
+a9             |out            |    7.486|
+a10            |out            |    8.103|
+a11            |out            |    8.377|
+a12            |out            |    7.538|
+a13            |out            |    7.664|
+a14            |out            |    8.192|
+a15            |out            |    7.857|
+a16            |out            |    7.517|
+a17            |out            |    7.547|
+a18            |out            |    7.955|
+a19            |out            |    8.127|
+a20            |out            |    7.334|
+a21            |out            |    8.055|
+a22            |out            |    7.543|
+a23            |out            |    9.880|
+a24            |out            |    7.590|
+a25            |out            |    7.920|
+a26            |out            |    8.360|
+a27            |out            |    7.687|
+a28            |out            |    7.106|
+a29            |out            |    7.917|
+a30            |out            |    7.794|
+a31            |out            |    7.602|
+switch<0>      |out            |    7.527|
+switch<1>      |out            |    7.792|
+switch<2>      |out            |    7.303|
+switch<3>      |out            |   10.423|
+switch<4>      |out            |   10.438|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Nov 01 22:01:39 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 184 MB
+
+
+

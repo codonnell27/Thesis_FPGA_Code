@@ -1,0 +1,3 @@
+verilog work "uart_receive.v"
+verilog work "uart_receive_testbench.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
