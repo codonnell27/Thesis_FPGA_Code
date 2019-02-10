@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.56 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.83 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.56 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.84 secs
  
 --> Reading design: main.prj
 
@@ -105,17 +105,30 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\one_btn_debounce.v" into library work
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\look_up.v" into library work
+Parsing module <look_up>.
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\Transmit_counter.v" into library work
+Parsing verilog file "transmit_counter_defines.v" included at line 12.
+Parsing module <Transmit_counter>.
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\one_btn_debounce.v" into library work
 Parsing module <one_btn_debounce>.
-Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\uart_transmit.v" into library work
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\ch_aline_storage.v" into library work
+Parsing module <ch_aline_storage>.
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" into library work
 Parsing verilog file "uart_transmit_fsm_defines.v" included at line 12.
 Parsing module <uart_transmit>.
-Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\uart_receive.v" into library work
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" into library work
 Parsing verilog file "uart_receive_defines.v" included at line 12.
 Parsing module <uart_receive>.
-Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\btn_debouce.v" into library work
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" into library work
+Parsing verilog file "transmit_fsm_defines.v" included at line 12.
+Parsing module <transmit_fsm>.
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" into library work
+Parsing verilog file "store_configs_defines.v" included at line 12.
+Parsing module <image_configs>.
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\btn_debouce.v" into library work
 Parsing module <btn_debouce>.
-Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\main.v" into library work
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" into library work
 Parsing verilog file "uart_main_defines.v" included at line 14.
 Parsing module <main>.
 
@@ -130,446 +143,70 @@ Elaborating module <btn_debouce>.
 Elaborating module <one_btn_debounce>.
 
 Elaborating module <uart_transmit>.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\uart_transmit.v" Line 80: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\uart_transmit.v" Line 88: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 80: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 88: Result of 15-bit expression is truncated to fit in 14-bit target.
 
 Elaborating module <uart_receive>.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\uart_receive.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\uart_receive.v" Line 78: Result of 15-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\uart_receive.v" Line 98: Result of 15-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\main.v" Line 39: Assignment to receiving_data ignored, since the identifier is never used
-
-=========================================================================
-*                           HDL Synthesis                               *
-=========================================================================
-
-Synthesizing Unit <main>.
-    Related source file is "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\main.v".
-        num_btns = 5
-        data_ln_len = 8
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\main.v" line 39: Output port <receiving> of the instance <receiver> is unconnected or connected to loadless signal.
-    Found 8-bit register for signal <led>.
-    Found 1-bit register for signal <start_transmit>.
-    Found 3-bit register for signal <next_state>.
-    Found 3-bit register for signal <current_state>.
-    Summary:
-	inferred  15 D-type flip-flop(s).
-Unit <main> synthesized.
-
-Synthesizing Unit <btn_debouce>.
-    Related source file is "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\btn_debouce.v".
-        num_btns = 5
-    Summary:
-	no macro.
-Unit <btn_debouce> synthesized.
-
-Synthesizing Unit <one_btn_debounce>.
-    Related source file is "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\one_btn_debounce.v".
-        dbn_num = 100
-    Found 100-bit register for signal <btn_vals>.
-    Found 2-bit register for signal <last_btn_debounced>.
-    Summary:
-	inferred 102 D-type flip-flop(s).
-Unit <one_btn_debounce> synthesized.
-
-Synthesizing Unit <uart_transmit>.
-    Related source file is "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\uart_transmit.v".
-        line_length = 8
-        line_handshake_length = 4
-        tmr_length = 14
-    Found 14-bit register for signal <bitTmr>.
-    Found 1-bit register for signal <ready>.
-    Found 2-bit register for signal <next_state>.
-    Found 4-bit register for signal <bitIndex>.
-    Found 1-bit register for signal <txBit>.
-    Found 8-bit register for signal <latched_data>.
-    Found 2-bit register for signal <current_state>.
-    Found 4-bit adder for signal <bitIndex[3]_GND_4_o_add_9_OUT> created at line 80.
-    Found 14-bit adder for signal <bitTmr[13]_GND_4_o_add_11_OUT> created at line 88.
-    Found 1-bit 10-to-1 multiplexer for signal <bitIndex[3]_X_4_o_Mux_10_o> created at line 81.
-    Found 14-bit comparator greater for signal <bit_done_INV_4_o> created at line 39
-    Found 4-bit comparator greater for signal <bitIndex[3]_bit_max[3]_LessThan_13_o> created at line 94
-    Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  32 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-	inferred   9 Multiplexer(s).
-Unit <uart_transmit> synthesized.
-
-Synthesizing Unit <uart_receive>.
-    Related source file is "\\vmware-host\shared folders\VM_Shared_folder\UART out.gz\uart_receive.v".
-        line_length = 8
-        line_handshake_length = 4
-        tmr_length = 14
-    Found 14-bit register for signal <bitTmr>.
-    Found 1-bit register for signal <receiving>.
-    Found 2-bit register for signal <next_state>.
-    Found 8-bit register for signal <data>.
-    Found 1-bit register for signal <new_data>.
-    Found 4-bit register for signal <bitIndex>.
-    Found 9-bit register for signal <tx_data>.
-    Found 2-bit register for signal <current_state>.
-    Found 4-bit adder for signal <bitIndex[3]_GND_5_o_add_9_OUT> created at line 67.
-    Found 14-bit adder for signal <bitTmr[13]_GND_5_o_add_16_OUT> created at line 98.
-    Found 4x1-bit Read Only RAM for signal <current_state[1]_PWR_5_o_Mux_21_o>
-    Found 14-bit 3-to-1 multiplexer for signal <current_state[1]_bitTmr[13]_wide_mux_20_OUT> created at line 49.
-    Found 2-bit 4-to-1 multiplexer for signal <current_state[1]_PWR_5_o_wide_mux_22_OUT> created at line 49.
-    Found 14-bit comparator greater for signal <bit_done_INV_8_o> created at line 35
-    Found 14-bit comparator lessequal for signal <n0020> created at line 101
-    Summary:
-	inferred   1 RAM(s).
-	inferred   2 Adder/Subtractor(s).
-	inferred  41 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-	inferred   5 Multiplexer(s).
-Unit <uart_receive> synthesized.
-
-=========================================================================
-HDL Synthesis Report
-
-Macro Statistics
-# RAMs                                                 : 1
- 4x1-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 4
- 14-bit adder                                          : 2
- 4-bit adder                                           : 2
-# Registers                                            : 29
- 1-bit register                                        : 5
- 100-bit register                                      : 5
- 14-bit register                                       : 2
- 2-bit register                                        : 9
- 3-bit register                                        : 2
- 4-bit register                                        : 2
- 8-bit register                                        : 3
- 9-bit register                                        : 1
-# Comparators                                          : 4
- 14-bit comparator greater                             : 2
- 14-bit comparator lessequal                           : 1
- 4-bit comparator greater                              : 1
-# Multiplexers                                         : 14
- 1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 3
- 14-bit 2-to-1 multiplexer                             : 2
- 14-bit 3-to-1 multiplexer                             : 1
- 2-bit 2-to-1 multiplexer                              : 4
- 2-bit 4-to-1 multiplexer                              : 1
- 4-bit 2-to-1 multiplexer                              : 2
-
-=========================================================================
-
-=========================================================================
-*                       Advanced HDL Synthesis                          *
-=========================================================================
-
-
-Synthesizing (advanced) Unit <uart_receive>.
-The following registers are absorbed into counter <bitIndex>: 1 register on signal <bitIndex>.
-INFO:Xst:3231 - The small RAM <Mram_current_state[1]_PWR_5_o_Mux_21_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4-word x 1-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <current_state> |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <uart_receive> synthesized (advanced).
-
-Synthesizing (advanced) Unit <uart_transmit>.
-The following registers are absorbed into counter <bitTmr>: 1 register on signal <bitTmr>.
-The following registers are absorbed into counter <bitIndex>: 1 register on signal <bitIndex>.
-Unit <uart_transmit> synthesized (advanced).
-
-=========================================================================
-Advanced HDL Synthesis Report
-
-Macro Statistics
-# RAMs                                                 : 1
- 4x1-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 1
- 14-bit adder                                          : 1
-# Counters                                             : 3
- 14-bit up counter                                     : 1
- 4-bit up counter                                      : 2
-# Registers                                            : 576
- Flip-Flops                                            : 576
-# Comparators                                          : 4
- 14-bit comparator greater                             : 2
- 14-bit comparator lessequal                           : 1
- 4-bit comparator greater                              : 1
-# Multiplexers                                         : 11
- 1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 3
- 14-bit 2-to-1 multiplexer                             : 1
- 14-bit 3-to-1 multiplexer                             : 1
- 2-bit 2-to-1 multiplexer                              : 4
- 2-bit 4-to-1 multiplexer                              : 1
-
-=========================================================================
-
-=========================================================================
-*                         Low Level Synthesis                           *
-=========================================================================
-
-Optimizing unit <main> ...
-
-Optimizing unit <one_btn_debounce> ...
-
-Optimizing unit <uart_transmit> ...
-
-Optimizing unit <uart_receive> ...
-WARNING:Xst:2677 - Node <btns/c_btn/last_btn_debounced_1> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <btns/c_btn/last_btn_debounced_0> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <receiver/receiving> of sequential type is unconnected in block <main>.
-INFO:Xst:2261 - The FF/Latch <current_state_0> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <current_state_2> 
-INFO:Xst:2261 - The FF/Latch <next_state_0> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <next_state_2> 
-
-Mapping all equations...
-Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 3.
-FlipFlop receiver/current_state_0 has been replicated 1 time(s)
-FlipFlop receiver/current_state_1 has been replicated 1 time(s)
-FlipFlop sender/current_state_1 has been replicated 2 time(s)
-
-Final Macro Processing ...
-
-=========================================================================
-Final Register Report
-
-Macro Statistics
-# Registers                                            : 597
- Flip-Flops                                            : 597
-
-=========================================================================
-
-=========================================================================
-*                           Partition Report                            *
-=========================================================================
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-=========================================================================
-*                            Design Summary                             *
-=========================================================================
-
-Top Level Output File Name         : main.ngc
-
-Primitive and Black Box Usage:
-------------------------------
-# BELS                             : 327
-#      GND                         : 1
-#      INV                         : 6
-#      LUT1                        : 13
-#      LUT2                        : 20
-#      LUT3                        : 21
-#      LUT4                        : 12
-#      LUT5                        : 22
-#      LUT6                        : 91
-#      MUXCY                       : 111
-#      MUXF7                       : 1
-#      VCC                         : 1
-#      XORCY                       : 28
-# FlipFlops/Latches                : 597
-#      FD                          : 511
-#      FD_1                        : 18
-#      FDC_1                       : 8
-#      FDE                         : 22
-#      FDE_1                       : 28
-#      FDR                         : 10
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 23
-#      IBUF                        : 14
-#      OBUF                        : 9
-
-Device utilization summary:
----------------------------
-
-Selected Device : 6slx45csg324-3 
-
-
-Slice Logic Utilization: 
- Number of Slice Registers:             589  out of  54576     1%  
- Number of Slice LUTs:                  185  out of  27288     0%  
-    Number used as Logic:               185  out of  27288     0%  
-
-Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    707
-   Number with an unused Flip Flop:     118  out of    707    16%  
-   Number with an unused LUT:           522  out of    707    73%  
-   Number of fully used LUT-FF pairs:    67  out of    707     9%  
-   Number of unique control sets:        10
-
-IO Utilization: 
- Number of IOs:                          24
- Number of bonded IOBs:                  24  out of    218    11%  
-    IOB Flip Flops/Latches:               8
-
-Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
-
----------------------------
-Partition Resource Summary:
----------------------------
-
-  No Partitions were found in this design.
-
----------------------------
-
-
-=========================================================================
-Timing Report
-
-NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
-      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
-      GENERATED AFTER PLACE-and-ROUTE.
-
-Clock Information:
-------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 589   |
-receiver/new_data                  | NONE(led_0)            | 8     |
------------------------------------+------------------------+-------+
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
-
-Asynchronous Control Signals Information:
-----------------------------------------
-No asynchronous control signals found in this design
-
-Timing Summary:
----------------
-Speed Grade: -3
-
-   Minimum period: 6.057ns (Maximum Frequency: 165.093MHz)
-   Minimum input arrival time before clock: 2.425ns
-   Maximum output required time after clock: 3.634ns
-   Maximum combinational path delay: No path found
-
-Timing Details:
----------------
-All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.057ns (frequency: 165.093MHz)
-  Total number of paths / destination ports: 2721 / 643
--------------------------------------------------------------------------
-Delay:               3.029ns (Levels of Logic = 1)
-  Source:            sender/current_state_0 (FF)
-  Destination:       sender/bitTmr_13 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk falling
-
-  Data Path: sender/current_state_0 to sender/bitTmr_13
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q             17   0.447   1.028  sender/current_state_0 (sender/current_state_0)
-     LUT2:I1->O           17   0.205   1.027  sender/_n0063_inv1 (sender/_n0063_inv)
-     FDE_1:CE                  0.322          sender/next_state_0
-    ----------------------------------------
-    Total                      3.029ns (0.974ns logic, 2.055ns route)
-                                       (32.2% logic, 67.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 16 / 16
--------------------------------------------------------------------------
-Offset:              2.425ns (Levels of Logic = 2)
-  Source:            uart_i (PAD)
-  Destination:       receiver/next_state_0 (FF)
-  Destination Clock: clk falling
-
-  Data Path: uart_i to receiver/next_state_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.898  uart_i_IBUF (uart_i_IBUF)
-     LUT6:I2->O            1   0.203   0.000  receiver/Mmux_current_state[1]_PWR_5_o_wide_mux_22_OUT1 (receiver/current_state[1]_PWR_5_o_wide_mux_22_OUT<0>)
-     FD_1:D                    0.102          receiver/next_state_0
-    ----------------------------------------
-    Total                      2.425ns (1.527ns logic, 0.898ns route)
-                                       (63.0% logic, 37.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'receiver/new_data'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            led_7 (FF)
-  Destination:       led<7> (PAD)
-  Source Clock:      receiver/new_data falling
-
-  Data Path: led_7 to led<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC_1:C->Q            1   0.447   0.579  led_7 (led_7)
-     OBUF:I->O                 2.571          led_7_OBUF (led<7>)
-    ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.634ns (Levels of Logic = 1)
-  Source:            sender/txBit (FF)
-  Destination:       uart_o (PAD)
-  Source Clock:      clk falling
-
-  Data Path: sender/txBit to uart_o
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD_1:C->Q             2   0.447   0.616  sender/txBit (sender/txBit)
-     OBUF:I->O                 2.571          uart_o_OBUF (uart_o)
-    ----------------------------------------
-    Total                      3.634ns (3.018ns logic, 0.616ns route)
-                                       (83.0% logic, 17.0% route)
-
-=========================================================================
-
-Cross Clock Domains Report:
---------------------------
-
-Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    3.613|    1.713|    4.612|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock receiver/new_data
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    3.586|         |
----------------+---------+---------+---------+---------+
-
-=========================================================================
-
-
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.08 secs
- 
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 78: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 99: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 48: Assignment to receiving_data ignored, since the identifier is never used
+
+Elaborating module <image_configs>.
+
+Elaborating module <ch_aline_storage>.
+
+Elaborating module <RAM32M(INIT_A=64'b0,INIT_B=64'b0,INIT_C=64'b0,INIT_D=64'b0)>.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 113: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 134: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 261: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 285: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 310: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 335: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 360: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 384: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 408: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 432: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 50: Assignment to config_storage_intaking ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 51: Assignment to no_alines ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 51: Size mismatch in connection of port <which_aline>. Formal port size is 4-bit while actual signal size is 32-bit.
+
+Elaborating module <transmit_fsm>.
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 68: Assignment to pulse_c0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 69: Assignment to pulse_c1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 70: Assignment to pulse_c2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 71: Assignment to pulse_c3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 72: Assignment to pulse_c4 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 73: Assignment to pulse_c5 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 74: Assignment to pulse_c6 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 75: Assignment to pulse_c7 ignored, since the identifier is never used
+
+Elaborating module <Transmit_counter>.
+
+Elaborating module <look_up>.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\Transmit_counter.v" Line 103: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\Transmit_counter.v" Line 65: Assignment to currently_counting ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 82: Assignment to count_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 93: Assignment to count_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 104: Assignment to count_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 115: Assignment to count_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 126: Assignment to count_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 137: Assignment to count_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 148: Assignment to count_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 159: Assignment to count_complete ignored, since the identifier is never used
+ERROR:HDLCompiler:1401 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 169: Signal transmit_complete in unit transmit_fsm is connected to following multiple drivers:
+Driver 0: output signal transmit_complete of instance Flip-Flop (transmit_complete).
+Driver 1: output signal transmit_complete of instance Flip-Flop (_i000017).
+Module transmit_fsm remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 13: Empty module <transmit_fsm> remains a black box.
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 56: Assignment to transmit_in_progress ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 57: Assignment to transmit_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 36: Net <config_storage_wr_en> does not have a driver.
 --> 
 
-Total memory usage is 185652 kilobytes
+Total memory usage is 165568 kilobytes
 
-Number of errors   :    0 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   41 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

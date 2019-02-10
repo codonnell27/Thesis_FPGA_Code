@@ -12,7 +12,7 @@
 `ifndef store_configs_defines
 `define store_configs_defines
 
-`define IDLE	     						5'b00000
+`define CONFIGS_IDLE	     				5'b00000
 `define CHANNEL_SELECT1_LOAD			5'b00001
 `define CHANNEL_SELECT1_HOLD		 	5'b00010
 `define CHANNEL_SELECT2_LOAD		 	5'b00011

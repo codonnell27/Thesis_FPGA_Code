@@ -133,6 +133,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="btn_debouce.v"/>
@@ -246,17 +247,24 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1548363327" xil_pn:in_ck="-3021126442996026455" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1041955067386363578" xil_pn:start_ts="1548363312">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1549828727" xil_pn:in_ck="1551075355054657409" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1041955067386363578" xil_pn:start_ts="1549828714">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="main.lso"/>
+      <outfile xil_pn:name="main.ngc"/>
+      <outfile xil_pn:name="main.ngr"/>
+      <outfile xil_pn:name="main.prj"/>
+      <outfile xil_pn:name="main.syr"/>
+      <outfile xil_pn:name="main.xst"/>
+      <outfile xil_pn:name="main_stx_beh.prj"/>
+      <outfile xil_pn:name="main_testbench_stx_beh.prj"/>
+      <outfile xil_pn:name="main_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
     <transform xil_pn:end_ts="1548359431" xil_pn:in_ck="141509727442713" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027435927655" xil_pn:start_ts="1548359431">
       <status xil_pn:value="SuccessfullyRun"/>

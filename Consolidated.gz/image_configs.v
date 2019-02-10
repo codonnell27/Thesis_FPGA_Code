@@ -12,9 +12,9 @@
 `include "store_configs_defines.v"
 module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_delays, wr_en, rd_en,
 		channel_select,
-		aline_select,
+		aline_select, //holds no. of alines used in this image
 		pulse_shape,
-		which_aline,
+		which_aline, //selects with aline's data will be read from memory
 		ch0delay, ch1delay, ch2delay, ch3delay, ch4delay, ch5delay, ch6delay, ch7delay
 		);
 
@@ -60,7 +60,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 	always @(negedge clk) begin
 	//state changing
 		if (rst) begin
-			current_state <= `IDLE; 
+			current_state <= `CONFIGS_IDLE; 
 		end else begin
 			current_state <= next_state;
 		end
@@ -68,7 +68,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 		always @(posedge clk) begin
 	
 		case (current_state)
-			`IDLE: begin
+			`CONFIGS_IDLE: begin
 				intaking_configs <= 0;
 				updating_delays <= 0;
 				ch0_wr_en <= 0;
@@ -89,10 +89,10 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					if (uart_data[7:5] == handshake) begin
 						next_state <= `CHANNEL_SELECT1_LOAD; 
 					end else begin
-						next_state <= 	`IDLE;
+						next_state <= 	`CONFIGS_IDLE;
 					end
 				end else begin
-					next_state <= 	`IDLE;
+					next_state <= 	`CONFIGS_IDLE;
 				end
 			end
 			
@@ -133,7 +133,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					next_state <= `READ_DELAY2;
 					rd_count <= rd_count + 1;
 				end else begin
-					next_state <= `IDLE;
+					next_state <= `CONFIGS_IDLE;
 					rd_count <= 3'd0;
 				end
 			end
@@ -432,7 +432,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 						addr <= addr + 1;
 						next_state <= 	`CH7_LOAD;
 					end else begin
-						next_state <= 	`IDLE;
+						next_state <= 	`CONFIGS_IDLE;
 						addr <= 5'd0;
 					end
 				end else begin
