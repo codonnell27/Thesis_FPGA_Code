@@ -241,10 +241,6 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 				end
 			end		
 			
-			
-	
-	//ch_aline_storage ch0 (.clk(clk), .rst(rst), .addr(addr), .data_in(ch0_data_in), .data_out(ch0_data_out), .wr_en(ch0_wr_en));			
-			
 			`CH0_LOAD: begin
 				ch0_wr_en <= 1;
 				if (new_data) begin
