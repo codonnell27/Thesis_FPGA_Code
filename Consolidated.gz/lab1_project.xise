@@ -100,6 +100,11 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="123"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
+    <file xil_pn:name="image_transmit_fsm.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="124"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="124"/>
+    </file>
+    <file xil_pn:name="image_transmit_fsm_defines.v" xil_pn:type="FILE_VERILOG"/>
   </files>
 
   <properties>
@@ -439,12 +444,12 @@
     <!-- Do not hand-edit this section, as it will be overwritten when the    -->
     <!-- project is analyzed based on files automatically identified as       -->
     <!-- include files.                                                       -->
+    <file xil_pn:name="transmit_counter_defines.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="store_configs_defines.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="uart_main_defines.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="transmit_fsm_defines.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="uart_receive_defines.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="uart_transmit_fsm_defines.v" xil_pn:type="FILE_VERILOG"/>
-    <file xil_pn:name="transmit_fsm_defines.v" xil_pn:type="FILE_VERILOG"/>
-    <file xil_pn:name="transmit_counter_defines.v" xil_pn:type="FILE_VERILOG"/>
   </autoManagedFiles>
 
 </project>

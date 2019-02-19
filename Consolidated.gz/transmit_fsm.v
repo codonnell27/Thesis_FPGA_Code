@@ -10,7 +10,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 `include "transmit_fsm_defines.v"
-module transmit_fsm(
+module aline_transmit_fsm(
 							clk,
 							rst,
 							used_counters,
@@ -26,7 +26,6 @@ module transmit_fsm(
 							start_transmit,
 							input_delay_data,
 							next_aline,
-							
 							transmit_in_progress,
 							transmit_complete,
 							ultrasound_pulses,
@@ -177,7 +176,7 @@ module transmit_fsm(
 	
 	end
 	
-		always @(negedge clk) begin
+	always @(negedge clk) begin
 	// whenever I had it as always @ (*) I would get warnings about too many interations.
 	begin
 		case(current_state)
@@ -214,11 +213,11 @@ module transmit_fsm(
 				switch <= 0;
 				//start_count <= ;
 				upload_new_count <= 0;
-				if (start_transmit) begin
+				//if (start_transmit) begin
 					next_state <= `OPEN_SWITCH;
-				end else begin
-					next_state <= `OK_TO_TRANSMIT;
-				end
+				//end else begin
+				//	next_state <= `OK_TO_TRANSMIT;
+				//end
 
 			end	
 			
@@ -268,11 +267,11 @@ module transmit_fsm(
 				switch <= 0;
 				start_count <= 0;
 				upload_new_count <= 0;
-				if (next_aline) begin
+				//if (next_aline) begin
 					next_state <= `TRANSMIT_IDLE;
-				end else begin
-					next_state <= `TRANSMIT_COMPLETE;
-				end
+				//end else begin
+				//	next_state <= `TRANSMIT_COMPLETE;
+				//end
 
 			
 			end

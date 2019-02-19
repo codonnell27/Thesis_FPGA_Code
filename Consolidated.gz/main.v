@@ -51,7 +51,7 @@ module main(led, uart_o, uart_i, clk, bouncy_btns, switch);
 										.channel_select(used_channels), .aline_select(num_alines), .pulse_shape(pulse_shape), .which_aline(current_aline), 
 										.ch0delay(delay_ch0), .ch1delay(delay_ch1), .ch2delay(delay_ch2), .ch3delay(delay_ch3), .ch4delay(delay_ch4), .ch5delay(delay_ch5), .ch6delay(delay_ch6), .ch7delay(delay_ch7));
 	
-	transmit_fsm pulse_transmit(.clk(clk), .rst(rst), .used_counters(used_channels), .pulse_shape(pulse_shape), .delay_ch0(delay_ch0), .delay_ch1(delay_ch1), 
+	aline_transmit_fsm pulse_transmit(.clk(clk), .rst(rst), .used_counters(used_channels), .pulse_shape(pulse_shape), .delay_ch0(delay_ch0), .delay_ch1(delay_ch1), 
 						.delay_ch2(delay_ch2), .delay_ch3(delay_ch3), .delay_ch4(delay_ch4), .delay_ch5(delay_ch5), .delay_ch6(delay_ch6), .delay_ch7(delay_ch7),
 						.start_transmit(start_us_transmit), .input_delay_data(input_delay_data_transmit_fsm), .next_aline(next_aline), .transmit_in_progress(transmit_in_progress), 
 						.transmit_complete(transmit_complete), .ultrasound_pulses(ultrasound_pulses), .pulse_sent(pulse_sent), .switch(afe_switch));
