@@ -3,16 +3,16 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to Z:/VM_Shared_folder/Thesis/Consolidated.gz/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.62 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.83 secs
  
 --> Parameter xsthdpdir set to Z:/VM_Shared_folder/Thesis/Consolidated.gz/xst
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.63 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.83 secs
  
---> Reading design: image_configs.prj
+--> Reading design: image_transmit_fsm.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,19 +39,30 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\look_up.v" into library work
+Parsing module <look_up>.
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\Transmit_counter.v" into library work
+Parsing verilog file "transmit_counter_defines.v" included at line 12.
+Parsing module <Transmit_counter>.
 Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\ch_aline_storage.v" into library work
 Parsing module <ch_aline_storage>.
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" into library work
+Parsing verilog file "transmit_fsm_defines.v" included at line 12.
+Parsing module <aline_transmit_fsm>.
 Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" into library work
 Parsing verilog file "store_configs_defines.v" included at line 12.
 Parsing module <image_configs>.
+Analyzing Verilog file "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" into library work
+Parsing verilog file "image_transmit_fsm_defines.v" included at line 12.
+Parsing module <image_transmit_fsm>.
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.85 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.16 secs
  
 --> 
 
-Total memory usage is 142200 kilobytes
+Total memory usage is 141560 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

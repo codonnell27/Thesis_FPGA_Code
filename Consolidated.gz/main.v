@@ -32,8 +32,8 @@ module main(led, uart_o, uart_i, clk, bouncy_btns, switch);
 	reg [2:0] current_state; 
 	reg [2:0] next_state;
 	
-	wire config_storage_intaking, config_storage_updating_delays, transmit_in_progress, transmit_complete, afe_switch;
-	reg config_storage_wr_en, config_storage_rd_en, start_us_transmit, input_delay_data_transmit_fsm, next_aline;
+	wire transmit_in_progress, afe_switch, busy;
+	wire mem_clear, start_us_transmit;
 	wire [7:0] used_channels, ultrasound_pulses, pulse_sent;
 	wire [4:0] num_alines;
 	reg [4:0] current_aline;
@@ -46,22 +46,20 @@ module main(led, uart_o, uart_i, clk, bouncy_btns, switch);
 	btn_debouce btns (.btn_i(bouncy_btns), .btn_o(db_btns), .clk(clk), .btns_posedge(btns_posedge));
 	uart_transmit sender (.send(start_transmit), .data(send_data), .clk(clk), .ready(send_ready), .uart_tx(uart_o), .rst(rst));
 	uart_receive receiver (.receiving(receiving_data), .data(received_data), .clk(clk), .uart_tx(uart_i), .rst(rst), .new_data(new_received_data));
-	image_configs store_configs (.uart_data(received_data), .rst(rst), .clk(clk), .new_data(new_received_data), 
-										.intaking_configs(config_storage_intaking), .updating_delays(config_storage_updating_delays), .wr_en(config_storage_wr_en), .rd_en(config_storage_rd_en),
-										.channel_select(used_channels), .aline_select(num_alines), .pulse_shape(pulse_shape), .which_aline(current_aline), 
-										.ch0delay(delay_ch0), .ch1delay(delay_ch1), .ch2delay(delay_ch2), .ch3delay(delay_ch3), .ch4delay(delay_ch4), .ch5delay(delay_ch5), .ch6delay(delay_ch6), .ch7delay(delay_ch7));
 	
-	aline_transmit_fsm pulse_transmit(.clk(clk), .rst(rst), .used_counters(used_channels), .pulse_shape(pulse_shape), .delay_ch0(delay_ch0), .delay_ch1(delay_ch1), 
-						.delay_ch2(delay_ch2), .delay_ch3(delay_ch3), .delay_ch4(delay_ch4), .delay_ch5(delay_ch5), .delay_ch6(delay_ch6), .delay_ch7(delay_ch7),
-						.start_transmit(start_us_transmit), .input_delay_data(input_delay_data_transmit_fsm), .next_aline(next_aline), .transmit_in_progress(transmit_in_progress), 
-						.transmit_complete(transmit_complete), .ultrasound_pulses(ultrasound_pulses), .pulse_sent(pulse_sent), .switch(afe_switch));
+	image_transmit_fsm image_transmit (.clk(clk), .rst(rst), .start_transmit(start_us_transmit),
+							.transmit_in_progress(transmit_in_progress), .ultrasound_pulses(ultrasound_pulses), .afe_switch(afe_switch), .busy(busy), 
+							.received_data(received_data), .new_received_data(new_received_data), .mem_clear(mem_clear)
+							);
 	
 	
 	
 	
 	assign rst = db_btns[0]; //center btn is reset
+	assign start_us_transmit = btns_posedge[2];
 	assign send_data = switch;
-	assign send = |(btns_posedge[num_btns-1:1]);
+	assign send = (btns_posedge[1]);
+	assign mem_clear =  btns_posedge[2];
 
 	always @(posedge clk) begin
 	//state changing

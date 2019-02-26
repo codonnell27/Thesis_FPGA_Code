@@ -1,0 +1,6 @@
+verilog work "look_up.v"
+verilog work "Transmit_counter.v"
+verilog work "ch_aline_storage.v"
+verilog work "transmit_fsm.v"
+verilog work "image_configs.v"
+verilog work "image_transmit_fsm.v"

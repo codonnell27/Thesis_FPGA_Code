@@ -2,7 +2,7 @@ set -tmpdir "Z:/VM_Shared_folder/Thesis/Consolidated.gz/xst/projnav.tmp"
 set -xsthdpdir "Z:/VM_Shared_folder/Thesis/Consolidated.gz/xst"
 run -compileonly yes
 -p xc6slx45-3-csg324
--top image_configs
+-top image_transmit_fsm
 -opt_mode Speed
 -opt_level 1
 -power NO
@@ -47,4 +47,4 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn image_configs.prj
+-ifn image_transmit_fsm.prj
