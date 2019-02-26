@@ -12,14 +12,22 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 `include "uart_main_defines.v"
-module main(led, uart_o, uart_i, clk, bouncy_btns, switch);
+module main(led, 
+			uart_o, 
+			uart_i, 
+			clk, 
+			bouncy_btns, 
+			switch, 
+			afe_switch, 
+			ultrasound_pulses);
 
 	parameter num_btns = 5;
 	parameter data_ln_len = 8;
 
 
 	output reg [7:0] led; 
-	output wire uart_o; 
+	output wire uart_o, afe_switch; 
+	output wire [7:0] ultrasound_pulses;
 	input wire [7:0] switch;
 	input wire clk, uart_i;
 	input wire [num_btns-1:0] bouncy_btns;
@@ -32,9 +40,9 @@ module main(led, uart_o, uart_i, clk, bouncy_btns, switch);
 	reg [2:0] current_state; 
 	reg [2:0] next_state;
 	
-	wire transmit_in_progress, afe_switch, busy;
+	wire transmit_in_progress, busy;
 	wire mem_clear, start_us_transmit;
-	wire [7:0] used_channels, ultrasound_pulses, pulse_sent;
+	wire [7:0] used_channels, pulse_sent;
 	wire [4:0] num_alines;
 	reg [4:0] current_aline;
 	wire [31:0] pulse_shape;
@@ -58,8 +66,8 @@ module main(led, uart_o, uart_i, clk, bouncy_btns, switch);
 	assign rst = db_btns[0]; //center btn is reset
 	assign start_us_transmit = btns_posedge[2];
 	assign send_data = switch;
-	assign send = (btns_posedge[1]);
-	assign mem_clear =  btns_posedge[2];
+	assign send = btns_posedge[1];
+	assign mem_clear =  btns_posedge[3];
 
 	always @(posedge clk) begin
 	//state changing

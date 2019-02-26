@@ -1,9 +1,18 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Jan 24 15:55:53 2019
+// Written by: Map P.20131013 on Tue Feb 26 10:55:04 2019
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "ultrasound_pulses<0>" LOCATE = SITE "U15" LEVEL 1;
+COMP "ultrasound_pulses<1>" LOCATE = SITE "U13" LEVEL 1;
+COMP "ultrasound_pulses<2>" LOCATE = SITE "M11" LEVEL 1;
+COMP "ultrasound_pulses<3>" LOCATE = SITE "R11" LEVEL 1;
+COMP "ultrasound_pulses<4>" LOCATE = SITE "T12" LEVEL 1;
+COMP "ultrasound_pulses<5>" LOCATE = SITE "N10" LEVEL 1;
+COMP "ultrasound_pulses<6>" LOCATE = SITE "M10" LEVEL 1;
+COMP "ultrasound_pulses<7>" LOCATE = SITE "U11" LEVEL 1;
 COMP "clk" LOCATE = SITE "L15" LEVEL 1;
+COMP "afe_switch" LOCATE = SITE "U16" LEVEL 1;
 COMP "bouncy_btns<0>" LOCATE = SITE "F5" LEVEL 1;
 COMP "bouncy_btns<1>" LOCATE = SITE "N4" LEVEL 1;
 COMP "bouncy_btns<2>" LOCATE = SITE "F6" LEVEL 1;
@@ -27,13 +36,5 @@ COMP "switch<4>" LOCATE = SITE "P12" LEVEL 1;
 COMP "switch<5>" LOCATE = SITE "R5" LEVEL 1;
 COMP "switch<6>" LOCATE = SITE "T5" LEVEL 1;
 COMP "switch<7>" LOCATE = SITE "E4" LEVEL 1;
-NET "receiver/data<0>" MAXDELAY = 5 ns;
-NET "receiver/data<1>" MAXDELAY = 5 ns;
-NET "receiver/data<2>" MAXDELAY = 5 ns;
-NET "receiver/data<3>" MAXDELAY = 5 ns;
-NET "receiver/data<4>" MAXDELAY = 5 ns;
-NET "receiver/data<5>" MAXDELAY = 5 ns;
-NET "receiver/data<6>" MAXDELAY = 5 ns;
-NET "receiver/data<7>" MAXDELAY = 5 ns;
 SCHEMATIC END;
 

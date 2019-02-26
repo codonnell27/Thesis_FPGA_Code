@@ -34,8 +34,8 @@ module image_transmit_fsm(clk,
 	reg [2:0] current_state;
 	reg [2:0] next_state;
 	
-	wire config_storage_intaking, config_storage_updating_delays, aline_transmit_in_progress, aline_transmit_complete, pulse_sent;
-	wire [7:0] used_channels; 
+	wire config_storage_intaking, config_storage_updating_delays, aline_transmit_in_progress, aline_transmit_complete;
+	wire [7:0] used_channels, pulse_sent; 
 	wire [4:0] num_alines;
 	wire [31:0] pulse_shape;
 	//wire [31:0] pulse_shap;
@@ -51,19 +51,20 @@ module image_transmit_fsm(clk,
 
 image_configs store_configs (.uart_data(received_data), .rst(rst), .clk(clk), .new_data(new_received_data), 
 										.intaking_configs(config_storage_intaking), .updating_delays(config_storage_updating_delays), .wr_en(config_storage_wr_en), .rd_en(config_storage_rd_en),
-										.channel_select(used_channels), .aline_select(num_alines[3:0]), .pulse_shape(pulse_shape), .which_aline(current_aline), 
+										.channel_select(used_channels), .aline_select(num_alines), .pulse_shape(pulse_shape), .which_aline(current_aline), 
 										.ch0delay(delay_ch0), .ch1delay(delay_ch1), .ch2delay(delay_ch2), .ch3delay(delay_ch3), .ch4delay(delay_ch4), .ch5delay(delay_ch5), .ch6delay(delay_ch6), .ch7delay(delay_ch7));
 
 aline_transmit_fsm pulse_transmit(.clk(clk), .rst(rst), .used_counters(used_channels), .pulse_shape(pulse_shape), .delay_ch0(delay_ch0), .delay_ch1(delay_ch1), 
 						.delay_ch2(delay_ch2), .delay_ch3(delay_ch3), .delay_ch4(delay_ch4), .delay_ch5(delay_ch5), .delay_ch6(delay_ch6), .delay_ch7(delay_ch7),
-						.start_transmit(start_us_transmit), .input_delay_data(input_delay_data_transmit_fsm), .next_aline(next_alines), .transmit_in_progress(aline_transmit_in_progress), 
-						.transmit_complete(aline_transmit_complete), .ultrasound_pulses(ultrasound_pulses), .pulse_sent(pulse_sent), .switch(afe_switch));
+						.start_transmit(start_us_transmit), .input_delay_data(input_delay_data_transmit_fsm),  .transmit_in_progress(aline_transmit_in_progress), 
+						.transmit_complete(aline_transmit_complete), .ultrasound_pulses(ultrasound_pulses), .pulse_sent(pulse_sent), .switch(afe_switch))
+						//.next_aline(next_aline),
+						;
 
 	always @(posedge clk) begin
 	//state changing
 		if (rst) begin
 			current_state <= `IMAGE_TRANSMIT_IDLE; 
-			busy <= 0;
 		end else begin
 			current_state <= next_state;
 		end
@@ -157,7 +158,7 @@ aline_transmit_fsm pulse_transmit(.clk(clk), .rst(rst), .used_counters(used_chan
 				input_delay_data_transmit_fsm <= 0;
 				//next_aline <= 0;
 				
-				if (current_aline <= num_aline[3:0]) begin
+				if (current_aline <= num_alines[3:0]) begin
 					if (mem_clear) begin
 						next_state <= `RETRIEVE_DELAYS;
 						

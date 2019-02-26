@@ -25,7 +25,7 @@ module aline_transmit_fsm(
 							delay_ch7,
 							start_transmit,
 							input_delay_data,
-							next_aline,
+							//next_aline,
 							transmit_in_progress,
 							transmit_complete,
 							ultrasound_pulses,
@@ -42,7 +42,7 @@ module aline_transmit_fsm(
 	//port definitions - customize for different bit widths
 	input wire clk, rst;
 	input wire start_transmit;
-	input wire next_aline;
+	//input wire next_aline;
 	input wire input_delay_data;
 	input wire [num_channels-1:0] used_counters;
 	input wire [pulse_length-1:0] pulse_shape;
@@ -63,15 +63,15 @@ module aline_transmit_fsm(
 	wire [num_channels-1:0] count_complete;
 	
 	wire	all_pulses_sent;
-	wire pulse_c0, pulse_c1, pulse_c2, pulse_c3, pulse_c4, pulse_c5, pulse_c6, pulse_c7;
-	assign pulse_c0 = ultrasound_pulses[0];
-	assign pulse_c1 = ultrasound_pulses[1];
-	assign pulse_c2 = ultrasound_pulses[2];
-	assign pulse_c3 = ultrasound_pulses[3];
-	assign pulse_c4 = ultrasound_pulses[4];
-	assign pulse_c5 = ultrasound_pulses[5];
-	assign pulse_c6 = ultrasound_pulses[6];
-	assign pulse_c7 = ultrasound_pulses[7];
+	//wire pulse_c0, pulse_c1, pulse_c2, pulse_c3, pulse_c4, pulse_c5, pulse_c6, pulse_c7;
+	//assign pulse_c0 = ultrasound_pulses[0];
+	//assign pulse_c1 = ultrasound_pulses[1];
+	//assign pulse_c2 = ultrasound_pulses[2];
+	//assign pulse_c3 = ultrasound_pulses[3];
+	//assign pulse_c4 = ultrasound_pulses[4];
+	//assign pulse_c5 = ultrasound_pulses[5];
+	//assign pulse_c6 = ultrasound_pulses[6];
+	//assign pulse_c7 = ultrasound_pulses[7];
 	
 	assign all_pulses_sent = &pulse_sent;
  
@@ -169,7 +169,7 @@ module aline_transmit_fsm(
 	//state changing
 		if (rst) begin
 			current_state <= `TRANSMIT_IDLE; 
-			transmit_complete <=0;
+			
 		end else begin
 			current_state <= next_state;
 		end
@@ -188,6 +188,10 @@ module aline_transmit_fsm(
 				switch <= 0;
 				start_count <= 0;
 				upload_new_count <= 0 ;
+				
+				if (rst) begin
+					transmit_complete <=0;
+				end
 				
 				if (input_delay_data) begin
 					next_state <= `LOAD_DELAYS;

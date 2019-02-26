@@ -15,6 +15,7 @@ Environment Variable      Effect
 NONE                      No environment variables were set
 --------------------------------------------------------------------------------
 
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
 INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
 INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
    option. All paths that are not constrained will be reported in the 
@@ -24,155 +25,66 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
    and for more information on accounting for different loading conditions, 
    please see the device datasheet.
 
-================================================================================
-Timing constraint: NET "receiver/data<0>" MAXDELAY = 5 ns;
-
- 1 net analyzed, 0 failing nets detected.
- 0 timing errors detected.
- Maximum net delay is   2.410ns.
---------------------------------------------------------------------------------
-Slack:                  2.590ns receiver/data<0>
-Report:    2.410ns delay meets   5.000ns timing constraint by 2.590ns
-From                              To                                Delay(ns)
-SLICE_X47Y61.AQ                   OLOGIC_X27Y38.D1                      2.410  
-SLICE_X47Y61.AQ                   SLICE_X47Y61.A6                       0.127  
-
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: NET "receiver/data<1>" MAXDELAY = 5 ns;
-
- 1 net analyzed, 0 failing nets detected.
- 0 timing errors detected.
- Maximum net delay is   2.412ns.
---------------------------------------------------------------------------------
-Slack:                  2.588ns receiver/data<1>
-Report:    2.412ns delay meets   5.000ns timing constraint by 2.588ns
-From                              To                                Delay(ns)
-SLICE_X47Y61.BQ                   OLOGIC_X27Y37.D1                      2.412  
-SLICE_X47Y61.BQ                   SLICE_X47Y61.B5                       0.202  
-
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: NET "receiver/data<2>" MAXDELAY = 5 ns;
-
- 1 net analyzed, 0 failing nets detected.
- 0 timing errors detected.
- Maximum net delay is   2.617ns.
---------------------------------------------------------------------------------
-Slack:                  2.383ns receiver/data<2>
-Report:    2.617ns delay meets   5.000ns timing constraint by 2.383ns
-From                              To                                Delay(ns)
-SLICE_X47Y61.CQ                   OLOGIC_X27Y36.D1                      2.617  
-SLICE_X47Y61.CQ                   SLICE_X47Y61.C5                       0.173  
-
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: NET "receiver/data<3>" MAXDELAY = 5 ns;
-
- 1 net analyzed, 0 failing nets detected.
- 0 timing errors detected.
- Maximum net delay is   2.861ns.
---------------------------------------------------------------------------------
-Slack:                  2.139ns receiver/data<3>
-Report:    2.861ns delay meets   5.000ns timing constraint by 2.139ns
-From                              To                                Delay(ns)
-SLICE_X47Y61.DQ                   OLOGIC_X27Y29.D1                      2.861  
-SLICE_X47Y61.DQ                   SLICE_X47Y61.D6                       0.127  
-
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: NET "receiver/data<4>" MAXDELAY = 5 ns;
-
- 1 net analyzed, 0 failing nets detected.
- 0 timing errors detected.
- Maximum net delay is   3.231ns.
---------------------------------------------------------------------------------
-Slack:                  1.769ns receiver/data<4>
-Report:    3.231ns delay meets   5.000ns timing constraint by 1.769ns
-From                              To                                Delay(ns)
-SLICE_X40Y61.AQ                   OLOGIC_X27Y28.D1                      3.231  
-SLICE_X40Y61.AQ                   SLICE_X40Y61.A6                       0.129  
-
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: NET "receiver/data<5>" MAXDELAY = 5 ns;
-
- 1 net analyzed, 0 failing nets detected.
- 0 timing errors detected.
- Maximum net delay is   4.443ns.
---------------------------------------------------------------------------------
-Slack:                  0.557ns receiver/data<5>
-Report:    4.443ns delay meets   5.000ns timing constraint by 0.557ns
-From                              To                                Delay(ns)
-SLICE_X17Y73.BQ                   OLOGIC_X1Y119.D1                      4.443  
-SLICE_X17Y73.BQ                   SLICE_X17Y73.B5                       0.200  
-
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: NET "receiver/data<6>" MAXDELAY = 5 ns;
-
- 1 net analyzed, 0 failing nets detected.
- 0 timing errors detected.
- Maximum net delay is   3.987ns.
---------------------------------------------------------------------------------
-Slack:                  1.013ns receiver/data<6>
-Report:    3.987ns delay meets   5.000ns timing constraint by 1.013ns
-From                              To                                Delay(ns)
-SLICE_X40Y49.CQ                   OLOGIC_X27Y4.D1                       3.987  
-SLICE_X40Y49.CQ                   SLICE_X40Y49.C5                       0.199  
-
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: NET "receiver/data<7>" MAXDELAY = 5 ns;
-
- 1 net analyzed, 0 failing nets detected.
- 0 timing errors detected.
- Maximum net delay is   3.495ns.
---------------------------------------------------------------------------------
-Slack:                  1.505ns receiver/data<7>
-Report:    3.495ns delay meets   5.000ns timing constraint by 1.505ns
-From                              To                                Delay(ns)
-SLICE_X40Y51.DQ                   OLOGIC_X20Y1.D1                       3.495  
-SLICE_X40Y51.DQ                   SLICE_X40Y51.D6                       0.129  
-
---------------------------------------------------------------------------------
-
-
-All constraints were met.
 
 
 Data Sheet report:
 -----------------
-No constraints were found to generate data for the Data Sheet Report section.
-Use the Advanced Analysis (-a) option or generate global constraints for each
-clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+All values displayed in nanoseconds (ns)
 
-Timing summary:
----------------
+Setup/Hold to clock clk
+--------------+------------+------------+------------+------------+------------------+--------+
+              |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source        | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------+------------+------------------+--------+
+bouncy_btns<0>|    5.733(R)|      SLOW  |   -3.581(R)|      FAST  |clk_BUFGP         |   0.000|
+bouncy_btns<1>|    1.793(R)|      SLOW  |   -1.095(R)|      SLOW  |clk_BUFGP         |   0.000|
+bouncy_btns<2>|    4.115(R)|      SLOW  |   -2.642(R)|      FAST  |clk_BUFGP         |   0.000|
+bouncy_btns<3>|    0.921(R)|      FAST  |   -0.114(R)|      SLOW  |clk_BUFGP         |   0.000|
+switch<0>     |    4.187(F)|      SLOW  |   -2.502(F)|      FAST  |clk_BUFGP         |   0.000|
+switch<1>     |    5.307(F)|      SLOW  |   -3.285(F)|      FAST  |clk_BUFGP         |   0.000|
+switch<2>     |    5.091(F)|      SLOW  |   -3.137(F)|      FAST  |clk_BUFGP         |   0.000|
+switch<3>     |    3.568(F)|      SLOW  |   -2.195(F)|      FAST  |clk_BUFGP         |   0.000|
+switch<4>     |    3.577(F)|      SLOW  |   -2.216(F)|      FAST  |clk_BUFGP         |   0.000|
+switch<5>     |    4.044(F)|      SLOW  |   -2.529(F)|      FAST  |clk_BUFGP         |   0.000|
+switch<6>     |    3.704(F)|      SLOW  |   -2.255(F)|      FAST  |clk_BUFGP         |   0.000|
+switch<7>     |    3.700(F)|      SLOW  |   -2.347(F)|      FAST  |clk_BUFGP         |   0.000|
+uart_i        |    6.121(F)|      SLOW  |   -3.608(F)|      FAST  |clk_BUFGP         |   0.000|
+--------------+------------+------------+------------+------------+------------------+--------+
 
-Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+Clock clk to Pad
+--------------------+-----------------+------------+-----------------+------------+------------------+--------+
+                    |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination         |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------------+-----------------+------------+-----------------+------------+------------------+--------+
+afe_switch          |        10.394(F)|      SLOW  |         6.011(F)|      FAST  |clk_BUFGP         |   0.000|
+uart_o              |        12.944(F)|      SLOW  |         7.559(F)|      FAST  |clk_BUFGP         |   0.000|
+ultrasound_pulses<0>|         8.437(F)|      SLOW  |         4.782(F)|      FAST  |clk_BUFGP         |   0.000|
+ultrasound_pulses<1>|         8.264(F)|      SLOW  |         4.686(F)|      FAST  |clk_BUFGP         |   0.000|
+ultrasound_pulses<2>|         9.089(F)|      SLOW  |         5.243(F)|      FAST  |clk_BUFGP         |   0.000|
+ultrasound_pulses<3>|         8.552(F)|      SLOW  |         4.882(F)|      FAST  |clk_BUFGP         |   0.000|
+ultrasound_pulses<4>|         8.754(F)|      SLOW  |         5.005(F)|      FAST  |clk_BUFGP         |   0.000|
+ultrasound_pulses<5>|         8.720(F)|      SLOW  |         4.966(F)|      FAST  |clk_BUFGP         |   0.000|
+ultrasound_pulses<6>|         8.764(F)|      SLOW  |         4.995(F)|      FAST  |clk_BUFGP         |   0.000|
+ultrasound_pulses<7>|         8.764(F)|      SLOW  |         5.009(F)|      FAST  |clk_BUFGP         |   0.000|
+--------------------+-----------------+------------+-----------------+------------+------------------+--------+
 
-Constraints cover 0 paths, 8 nets, and 16 connections
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.244|    2.901|    4.034|    4.724|
+---------------+---------+---------+---------+---------+
 
-Design statistics:
-   Maximum net delay:   4.443ns
 
-
-Analysis completed Thu Jan 24 15:56:23 2019 
+Analysis completed Tue Feb 26 10:55:51 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 186 MB
+Peak Memory Usage: 197 MB
 
 
 

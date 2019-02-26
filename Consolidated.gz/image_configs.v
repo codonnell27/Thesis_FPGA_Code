@@ -24,8 +24,8 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 	parameter handshake = 3'b110;
 	wire [4:0] max_addr;
 	assign max_addr = 5'b11111;
-	wire [2:0] rd_count_max;
-	assign rd_count_max = 3'b010;
+	wire [1:0] rd_count_max;
+	assign rd_count_max = 2'b10;
 
 	//port definitions - customize for different bit widths
 	input wire rst, clk, new_data, wr_en, rd_en;
@@ -41,7 +41,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 	
 	wire [7:0] ch0_data_out, ch1_data_out, ch2_data_out, ch3_data_out, ch4_data_out, ch5_data_out, ch6_data_out, ch7_data_out;
 	reg ch0_wr_en, ch1_wr_en, ch2_wr_en, ch3_wr_en, ch4_wr_en, ch5_wr_en, ch6_wr_en, ch7_wr_en;
-	reg [2:0] rd_count; 
+	reg [1:0] rd_count; 
 	//port definitions - customize for different bit widths
 
 	reg [4:0] current_state, next_state;
