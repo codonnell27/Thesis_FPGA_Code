@@ -25,7 +25,7 @@ module main(led,
 	parameter data_ln_len = 8;
 
 
-	output reg [7:0] led; 
+	output wire [7:0] led; 
 	output wire uart_o, afe_switch; 
 	output wire [7:0] ultrasound_pulses;
 	input wire [7:0] switch;
@@ -44,9 +44,10 @@ module main(led,
 	wire mem_clear, start_us_transmit;
 	wire [7:0] used_channels, pulse_sent;
 	wire [4:0] num_alines;
-	reg [4:0] current_aline;
 	wire [31:0] pulse_shape;
 	wire [15:0] delay_ch0, delay_ch1, delay_ch2, delay_ch3, delay_ch4, delay_ch5, delay_ch6, delay_ch7;
+	wire [2:0] image_transmit_current_state;
+	wire [3:0] current_image_aline;
 	
 	
 
@@ -57,20 +58,29 @@ module main(led,
 	
 	image_transmit_fsm image_transmit (.clk(clk), .rst(rst), .start_transmit(start_us_transmit),
 							.transmit_in_progress(transmit_in_progress), .ultrasound_pulses(ultrasound_pulses), .afe_switch(afe_switch), .busy(busy), 
-							.received_data(received_data), .new_received_data(new_received_data), .mem_clear(mem_clear)
+							.received_data(received_data), .new_received_data(new_received_data), .mem_clear(mem_clear), 
+							.current_state(image_transmit_current_state), .current_aline(current_image_aline)
 							);
 	
+	assign send_data = switch;
 	
+	assign led[2:0] =  image_transmit_current_state;
+	assign led[6:3] = current_image_aline;
+	//assign led[4] = afe_switch;
+	//assign led[5] = new_received_data;	
+	//assign led[6] = busy;	
+	assign led[7] = transmit_in_progress;	
 	
 	
 	assign rst = db_btns[0]; //center btn is reset
-	assign start_us_transmit = btns_posedge[2];
-	assign send_data = switch;
-	assign send = btns_posedge[1];
-	assign mem_clear =  btns_posedge[3];
+	assign send = btns_posedge[1]; //top button
+	assign start_us_transmit = btns_posedge[2]; //right button
+	assign mem_clear =  btns_posedge[3]; //bottom button
+
+	//assign led[4:0] = pulse_sent[4:0];
 
 	always @(posedge clk) begin
-	//state changing
+	//state changing 
 		if (rst) begin
 			current_state <= `MAIN_IDLE; 
 		end else begin
@@ -80,9 +90,9 @@ module main(led,
 	
 	always @(negedge new_received_data or posedge db_btns[2]) begin
 		if (db_btns[2]) begin
-			led <= 8'd0;
+			//led[7:0] <= 7'd0;
 		end else begin
-			led <= received_data;
+			//led[7:0] <= received_data[7:0];
 		end
 	end
 

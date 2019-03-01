@@ -5,8 +5,6 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -18,8 +16,6 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
@@ -28,71 +24,19 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+# run 1.00us
 ISim P.20131013 (signature 0x8ef4fb42)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
+# run 1.00us
 # run 1.00us
 # run 1.00us
 ISim P.20131013 (signature 0x8ef4fb42)
@@ -100,8 +44,19 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: For instance uut/store_configs/, width 5 of formal port aline_select is not equal to width 4 of actual.
-WARNING: File "//vmware-host/Shared Folders/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 37.  For instance uut/pulse_transmit/, width 8 of formal port pulse_sent is not equal to width 1 of actual signal pulse_sent.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us

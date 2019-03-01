@@ -12,19 +12,21 @@
          <ClosedNode>/image_configs Z:|VM_Shared_folder|Thesis|Consolidated.gz|image_configs.v</ClosedNode>
          <ClosedNode>/image_configs Z:|VM_Shared_folder|UART out.gz|image_configs.v</ClosedNode>
          <ClosedNode>/main Z:|VM_Shared_folder|Thesis|Consolidated.gz|main.v/btns - btn_debouce</ClosedNode>
+         <ClosedNode>/main Z:|VM_Shared_folder|Thesis|Consolidated.gz|main.v/image_transmit - image_transmit_fsm/pulse_transmit - aline_transmit_fsm</ClosedNode>
+         <ClosedNode>/main Z:|VM_Shared_folder|Thesis|Consolidated.gz|main.v/image_transmit - image_transmit_fsm/store_configs - image_configs</ClosedNode>
          <ClosedNode>/main Z:|VM_Shared_folder|Thesis|Consolidated.gz|main.v/pulse_transmit - transmit_fsm</ClosedNode>
          <ClosedNode>/main Z:|VM_Shared_folder|Thesis|Consolidated.gz|main.v/store_configs - image_configs</ClosedNode>
          <ClosedNode>/main Z:|VM_Shared_folder|UART out.gz|main.v/btns - btn_debouce</ClosedNode>
          <ClosedNode>/store_configs Z:|VM_Shared_folder|UART out.gz|store_configs.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>sender - uart_transmit (Z:/VM_Shared_folder/Thesis/Consolidated.gz/uart_transmit.v)</SelectedItem>
+         <SelectedItem>main (Z:/VM_Shared_folder/Thesis/Consolidated.gz/main.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d2000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d20000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>sender - uart_transmit (Z:/VM_Shared_folder/Thesis/Consolidated.gz/uart_transmit.v)</CurrentItem>
+      <CurrentItem>main (Z:/VM_Shared_folder/Thesis/Consolidated.gz/main.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -73,38 +75,46 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Configure Target Device</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001de000000010000000100000000000000000000000064ffffffff000000810000000000000001000001de0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Configure Target Device</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Automatic `includes</ClosedNode>
+         <ClosedNode>/debounce_testmodule Z:|VM_Shared_folder|Thesis|Consolidated.gz|debounce_testmodule.v</ClosedNode>
          <ClosedNode>/debounce_testmodule Z:|VM_Shared_folder|UART out.gz|debounce_testmodule.v</ClosedNode>
          <ClosedNode>/debounce_testmodule Z:|VM_Shared_folder|UART out.gz|debounce_testmodule.v/uut - btn_debouce</ClosedNode>
+         <ClosedNode>/image_configs_text Z:|VM_Shared_folder|Thesis|Consolidated.gz|image_configs_text.v</ClosedNode>
          <ClosedNode>/image_configs_text Z:|VM_Shared_folder|UART out.gz|image_configs_text.v/uut - image_configs</ClosedNode>
+         <ClosedNode>/image_fsm_test Z:|VM_Shared_folder|Thesis|Consolidated.gz|image_fsm_test.v/uut - image_transmit_fsm</ClosedNode>
+         <ClosedNode>/main_testbench Z:|VM_Shared_folder|Thesis|Consolidated.gz|main_testbench.v</ClosedNode>
          <ClosedNode>/main_testbench Z:|VM_Shared_folder|UART out.gz|main_testbench.v</ClosedNode>
          <ClosedNode>/main_testbench Z:|VM_Shared_folder|UART out.gz|main_testbench.v/uut - main/btns - btn_debouce</ClosedNode>
+         <ClosedNode>/ram_test Z:|VM_Shared_folder|Thesis|Consolidated.gz|ram_test.v</ClosedNode>
          <ClosedNode>/ram_test Z:|VM_Shared_folder|UART out.gz|ram_test.v</ClosedNode>
          <ClosedNode>/store_configs_testbench Z:|VM_Shared_folder|UART out.gz|store_configs_testbench.v</ClosedNode>
          <ClosedNode>/test_configs Z:|VM_Shared_folder|UART out.gz|test_configs.v</ClosedNode>
+         <ClosedNode>/testbench Z:|VM_Shared_folder|Thesis|Consolidated.gz|testbench.v</ClosedNode>
          <ClosedNode>/testbench Z:|VM_Shared_folder|UART out.gz|testbench.v</ClosedNode>
+         <ClosedNode>/uart_receive_testbench Z:|VM_Shared_folder|Thesis|Consolidated.gz|uart_receive_testbench.v</ClosedNode>
          <ClosedNode>/uart_receive_testbench Z:|VM_Shared_folder|UART out.gz|uart_receive_testbench.v</ClosedNode>
+         <ClosedNode>/uart_transmit_testbench Z:|VM_Shared_folder|Thesis|Consolidated.gz|uart_transmit_testbench.v</ClosedNode>
          <ClosedNode>/uart_transmit_testbench Z:|VM_Shared_folder|UART out.gz|uart_transmit_testbench.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>image_configs_text (Z:/VM_Shared_folder/UART out.gz/image_configs_text.v)</SelectedItem>
+         <SelectedItem>image_fsm_test (Z:/VM_Shared_folder/Thesis/Consolidated.gz/image_fsm_test.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d80000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001db000000020000000000000000000000000200000064ffffffff000000810000000300000002000001db0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>image_configs_text (Z:/VM_Shared_folder/UART out.gz/image_configs_text.v)</CurrentItem>
+      <CurrentItem>image_fsm_test (Z:/VM_Shared_folder/Thesis/Consolidated.gz/image_fsm_test.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -112,26 +122,26 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Design Utilities</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001de000000010000000100000000000000000000000064ffffffff000000810000000000000001000001de0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001de000000010000000100000000000000000000000064ffffffff000000810000000000000001000001de0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff000000000000000200000191000001d901000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -142,12 +152,12 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001de000000010000000100000000000000000000000064ffffffff000000810000000000000001000001de0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
 </Project>

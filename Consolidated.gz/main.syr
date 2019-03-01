@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.82 secs
+Total CPU time to Xst completion: 0.75 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.82 secs
+Total CPU time to Xst completion: 0.77 secs
  
 --> Reading design: main.prj
 
@@ -153,7 +153,7 @@ Elaborating module <uart_receive>.
 WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 78: Result of 15-bit expression is truncated to fit in 14-bit target.
 WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 99: Result of 15-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 56: Assignment to receiving_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 57: Assignment to receiving_data ignored, since the identifier is never used
 
 Elaborating module <image_transmit_fsm>.
 
@@ -162,16 +162,16 @@ Elaborating module <image_configs>.
 Elaborating module <ch_aline_storage>.
 
 Elaborating module <RAM32M(INIT_A=64'b0,INIT_B=64'b0,INIT_C=64'b0,INIT_D=64'b0)>.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 113: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 134: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 257: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 281: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 306: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 331: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 356: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 380: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 404: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 428: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 128: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 149: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 272: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 296: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 321: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 346: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 371: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 395: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 419: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 443: Result of 6-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <aline_transmit_fsm>.
 
@@ -188,9 +188,9 @@ WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis
 WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 136: Assignment to count_complete ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 147: Assignment to count_complete ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 158: Assignment to count_complete ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" Line 60: Assignment to aline_transmit_complete ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" Line 147: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 59: Assignment to transmit_in_progress ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" Line 62: Assignment to aline_transmit_complete ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" Line 154: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 60: Assignment to busy ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -200,15 +200,13 @@ Synthesizing Unit <main>.
     Related source file is "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v".
         num_btns = 5
         data_ln_len = 8
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 56: Output port <receiving> of the instance <receiver> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 58: Output port <transmit_in_progress> of the instance <image_transmit> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 58: Output port <busy> of the instance <image_transmit> is unconnected or connected to loadless signal.
-    Found 8-bit register for signal <led>.
+INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 57: Output port <receiving> of the instance <receiver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 59: Output port <busy> of the instance <image_transmit> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <start_transmit>.
     Found 3-bit register for signal <next_state>.
     Found 3-bit register for signal <current_state>.
     Summary:
-	inferred  15 D-type flip-flop(s).
+	inferred   7 D-type flip-flop(s).
 Unit <main> synthesized.
 
 Synthesizing Unit <btn_debouce>.
@@ -281,28 +279,33 @@ Unit <uart_receive> synthesized.
 
 Synthesizing Unit <image_transmit_fsm>.
     Related source file is "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v".
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" line 57: Output port <transmit_complete> of the instance <pulse_transmit> is unconnected or connected to loadless signal.
-    Found 1-bit register for signal <start_us_transmit>.
-    Found 1-bit register for signal <input_delay_data_transmit_fsm>.
-    Found 3-bit register for signal <next_state>.
-    Found 4-bit register for signal <current_aline>.
-    Found 1-bit register for signal <config_storage_rd_en>.
+INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" line 59: Output port <transmit_complete> of the instance <pulse_transmit> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <transmit_in_progress>.
     Found 1-bit register for signal <config_storage_wr_en>.
+    Found 1-bit register for signal <config_storage_rd_en>.
+    Found 1-bit register for signal <start_us_transmit>.
+    Found 1-bit register for signal <input_delay_data_transmit_fsm>.
+    Found 4-bit register for signal <current_aline>.
+    Found 3-bit register for signal <next_state>.
     Found 1-bit register for signal <busy>.
     Found 3-bit register for signal <current_state>.
-    Found 4-bit adder for signal <current_aline[3]_GND_6_o_add_9_OUT> created at line 147.
-    Found 4-bit comparator lessequal for signal <n0015> created at line 161
+    Found 4-bit adder for signal <current_aline[3]_GND_6_o_add_10_OUT> created at line 154.
+    Found 4-bit comparator greater for signal <current_aline[3]_num_alines[3]_LessThan_14_o> created at line 169
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  16 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred  12 Multiplexer(s).
+	inferred  11 Multiplexer(s).
 Unit <image_transmit_fsm> synthesized.
 
 Synthesizing Unit <image_configs>.
     Related source file is "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v".
+        test = 1'b1
         handshake = 3'b110
+        test_channels = 8'b11111111
+        test_alines = 5'b10011
+        test_pulse_shape = 32'b00000000000000000000000000000001
+WARNING:Xst:647 - Input <wr_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 5-bit register for signal <addr>.
     Found 1-bit register for signal <ch0delay<15>>.
     Found 1-bit register for signal <ch0delay<14>>.
@@ -486,15 +489,15 @@ Synthesizing Unit <image_configs>.
     Found 1-bit register for signal <intaking_configs>.
     Found 1-bit register for signal <updating_delays>.
     Found 5-bit register for signal <current_state>.
-    Found 2-bit adder for signal <rd_count[1]_GND_7_o_add_16_OUT> created at line 134.
-    Found 5-bit adder for signal <addr[4]_GND_7_o_add_82_OUT> created at line 428.
-    Found 2-bit comparator greater for signal <rd_count[1]_rd_count_max[1]_LessThan_16_o> created at line 132
-    Found 5-bit comparator greater for signal <addr[4]_max_addr[4]_LessThan_82_o> created at line 427
+    Found 2-bit adder for signal <rd_count[1]_GND_7_o_add_13_OUT> created at line 149.
+    Found 5-bit adder for signal <addr[4]_GND_7_o_add_79_OUT> created at line 443.
+    Found 2-bit comparator greater for signal <rd_count[1]_rd_count_max[1]_LessThan_13_o> created at line 147
+    Found 5-bit comparator greater for signal <addr[4]_max_addr[4]_LessThan_79_o> created at line 442
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 200 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred  57 Multiplexer(s).
+	inferred  96 Multiplexer(s).
 Unit <image_configs> synthesized.
 
 Synthesizing Unit <ch_aline_storage>.
@@ -570,7 +573,7 @@ Macro Statistics
  2-bit adder                                           : 1
  4-bit adder                                           : 3
  5-bit adder                                           : 1
-# Registers                                            : 292
+# Registers                                            : 291
  1-bit register                                        : 218
  100-bit register                                      : 5
  14-bit register                                       : 2
@@ -580,28 +583,27 @@ Macro Statistics
  32-bit register                                       : 8
  4-bit register                                        : 3
  5-bit register                                        : 4
- 8-bit register                                        : 3
+ 8-bit register                                        : 2
  9-bit register                                        : 1
 # Comparators                                          : 15
  14-bit comparator greater                             : 2
  14-bit comparator lessequal                           : 1
  16-bit comparator lessequal                           : 8
  2-bit comparator greater                              : 1
- 4-bit comparator greater                              : 1
- 4-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 2
  5-bit comparator greater                              : 1
-# Multiplexers                                         : 181
+# Multiplexers                                         : 219
  1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 38
+ 1-bit 2-to-1 multiplexer                              : 76
  14-bit 2-to-1 multiplexer                             : 2
  14-bit 3-to-1 multiplexer                             : 1
  16-bit 2-to-1 multiplexer                             : 16
  2-bit 2-to-1 multiplexer                              : 6
  2-bit 4-to-1 multiplexer                              : 1
- 3-bit 2-to-1 multiplexer                              : 58
+ 3-bit 2-to-1 multiplexer                              : 59
  32-bit 2-to-1 multiplexer                             : 8
  4-bit 2-to-1 multiplexer                              : 3
- 5-bit 2-to-1 multiplexer                              : 47
+ 5-bit 2-to-1 multiplexer                              : 46
 
 =========================================================================
 
@@ -611,7 +613,6 @@ Macro Statistics
 
 WARNING:Xst:1290 - Hierarchical block <l_btn> is unconnected in block <btns>.
    It will be removed from the design.
-WARNING:Xst:2677 - Node <aline_select_4> of sequential type is unconnected in block <store_configs>.
 
 Synthesizing (advanced) Unit <image_transmit_fsm>.
 The following registers are absorbed into counter <current_aline>: 1 register on signal <current_aline>.
@@ -651,27 +652,26 @@ Macro Statistics
 # Counters                                             : 4
  14-bit up counter                                     : 1
  4-bit up counter                                      : 3
-# Registers                                            : 1383
- Flip-Flops                                            : 1383
+# Registers                                            : 1375
+ Flip-Flops                                            : 1375
 # Comparators                                          : 15
  14-bit comparator greater                             : 2
  14-bit comparator lessequal                           : 1
  16-bit comparator lessequal                           : 8
  2-bit comparator greater                              : 1
- 4-bit comparator greater                              : 1
- 4-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 2
  5-bit comparator greater                              : 1
-# Multiplexers                                         : 177
+# Multiplexers                                         : 215
  1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 38
+ 1-bit 2-to-1 multiplexer                              : 76
  14-bit 2-to-1 multiplexer                             : 1
  14-bit 3-to-1 multiplexer                             : 1
  16-bit 2-to-1 multiplexer                             : 16
  2-bit 2-to-1 multiplexer                              : 6
  2-bit 4-to-1 multiplexer                              : 1
- 3-bit 2-to-1 multiplexer                              : 58
+ 3-bit 2-to-1 multiplexer                              : 59
  32-bit 2-to-1 multiplexer                             : 8
- 5-bit 2-to-1 multiplexer                              : 47
+ 5-bit 2-to-1 multiplexer                              : 46
 
 =========================================================================
 
@@ -698,10 +698,9 @@ Optimizing unit <Transmit_counter> ...
 WARNING:Xst:2677 - Node <btns/c_btn/last_btn_debounced_1> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <btns/c_btn/last_btn_debounced_0> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <receiver/receiving> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <image_transmit/transmit_in_progress> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <image_transmit/config_storage_wr_en> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <image_transmit/start_us_transmit> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <image_transmit/busy> of sequential type is unconnected in block <main>.
-WARNING:Xst:2677 - Node <image_transmit/store_configs/aline_select_4> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <image_transmit/pulse_transmit/transmit_complete> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <image_transmit/pulse_transmit/counter7/count_complete> of sequential type is unconnected in block <main>.
 WARNING:Xst:2677 - Node <image_transmit/pulse_transmit/counter6/count_complete> of sequential type is unconnected in block <main>.
@@ -719,9 +718,7 @@ Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 8.
 FlipFlop image_transmit/store_configs/current_state_0 has been replicated 1 time(s)
 FlipFlop image_transmit/store_configs/current_state_1 has been replicated 1 time(s)
-FlipFlop image_transmit/store_configs/current_state_2 has been replicated 2 time(s)
-FlipFlop image_transmit/store_configs/current_state_3 has been replicated 2 time(s)
-FlipFlop image_transmit/store_configs/current_state_4 has been replicated 1 time(s)
+FlipFlop image_transmit/store_configs/current_state_3 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -733,8 +730,8 @@ Unit <main> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1294
- Flip-Flops                                            : 1294
+# Registers                                            : 1283
+ Flip-Flops                                            : 1283
 # Shift Registers                                      : 1
  2-bit shift register                                  : 1
 
@@ -759,26 +756,26 @@ Top Level Output File Name         : main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1714
+# BELS                             : 1722
 #      GND                         : 1
-#      INV                         : 18
+#      INV                         : 25
 #      LUT1                        : 133
-#      LUT2                        : 323
-#      LUT3                        : 189
-#      LUT4                        : 173
-#      LUT5                        : 45
-#      LUT6                        : 402
+#      LUT2                        : 337
+#      LUT3                        : 186
+#      LUT4                        : 193
+#      LUT5                        : 47
+#      LUT6                        : 367
 #      MUXCY                       : 270
-#      MUXF7                       : 3
+#      MUXF7                       : 6
 #      VCC                         : 1
 #      XORCY                       : 156
-# FlipFlops/Latches                : 1295
-#      FD                          : 446
-#      FD_1                        : 50
-#      FDC_1                       : 8
-#      FDE                         : 208
+# FlipFlops/Latches                : 1284
+#      FD                          : 458
+#      FD_1                        : 46
+#      FDE                         : 197
 #      FDE_1                       : 571
-#      FDR                         : 12
+#      FDR                         : 9
+#      FDS                         : 3
 # RAMS                             : 8
 #      RAM32M                      : 8
 # Shift Registers                  : 1
@@ -796,24 +793,23 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1287  out of  54576     2%  
- Number of Slice LUTs:                 1316  out of  27288     4%  
-    Number used as Logic:              1283  out of  27288     4%  
+ Number of Slice Registers:            1284  out of  54576     2%  
+ Number of Slice LUTs:                 1321  out of  27288     4%  
+    Number used as Logic:              1288  out of  27288     4%  
     Number used as Memory:               33  out of   6408     0%  
        Number used as RAM:               32
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1857
-   Number with an unused Flip Flop:     570  out of   1857    30%  
-   Number with an unused LUT:           541  out of   1857    29%  
-   Number of fully used LUT-FF pairs:   746  out of   1857    40%  
-   Number of unique control sets:        58
+ Number of LUT Flip Flop pairs used:   1858
+   Number with an unused Flip Flop:     574  out of   1858    30%  
+   Number with an unused LUT:           537  out of   1858    28%  
+   Number of fully used LUT-FF pairs:   747  out of   1858    40%  
+   Number of unique control sets:        63
 
 IO Utilization: 
  Number of IOs:                          33
  Number of bonded IOBs:                  32  out of    218    14%  
-    IOB Flip Flops/Latches:               8
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -839,10 +835,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 1296  |
-receiver/new_data                  | NONE(led_0)            | 8     |
+clk                                | BUFGP                  | 1293  |
 -----------------------------------+------------------------+-------+
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -852,9 +846,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.308ns (Maximum Frequency: 120.371MHz)
+   Minimum period: 8.194ns (Maximum Frequency: 122.041MHz)
    Minimum input arrival time before clock: 2.425ns
-   Maximum output required time after clock: 3.668ns
+   Maximum output required time after clock: 3.975ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -863,10 +857,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 8.308ns (frequency: 120.371MHz)
-  Total number of paths / destination ports: 13514 / 2179
+  Clock period: 8.194ns (frequency: 122.041MHz)
+  Total number of paths / destination ports: 13132 / 2165
 -------------------------------------------------------------------------
-Delay:               4.154ns (Levels of Logic = 18)
+Delay:               4.097ns (Levels of Logic = 18)
   Source:            btns/c_btn/btn_vals_80 (FF)
   Destination:       image_transmit/store_configs/current_state_4 (FF)
   Source Clock:      clk rising
@@ -893,12 +887,12 @@ Delay:               4.154ns (Levels of Logic = 18)
      MUXCY:CI->O           1   0.019   0.000  btns/c_btn/out_wg_cy<13> (btns/c_btn/out_wg_cy<13>)
      MUXCY:CI->O           1   0.019   0.000  btns/c_btn/out_wg_cy<14> (btns/c_btn/out_wg_cy<14>)
      MUXCY:CI->O           1   0.019   0.000  btns/c_btn/out_wg_cy<15> (btns/c_btn/out_wg_cy<15>)
-     MUXCY:CI->O          48   0.258   1.520  btns/c_btn/out_wg_cy<16> (db_btns<0>)
+     MUXCY:CI->O          44   0.258   1.463  btns/c_btn/out_wg_cy<16> (db_btns<0>)
      LUT2:I1->O            1   0.205   0.000  image_transmit/store_configs/current_state_4_rstpot (image_transmit/store_configs/current_state_4_rstpot)
      FD_1:D                    0.102          image_transmit/store_configs/current_state_4
     ----------------------------------------
-    Total                      4.154ns (1.653ns logic, 2.501ns route)
-                                       (39.8% logic, 60.2% route)
+    Total                      4.097ns (1.653ns logic, 2.444ns route)
+                                       (40.3% logic, 59.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -921,42 +915,23 @@ Offset:              2.425ns (Levels of Logic = 2)
                                        (63.0% logic, 37.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'receiver/new_data'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            led_7 (FF)
-  Destination:       led<7> (PAD)
-  Source Clock:      receiver/new_data falling
-
-  Data Path: led_7 to led<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC_1:C->Q            1   0.447   0.579  led_7 (led_7)
-     OBUF:I->O                 2.571          led_7_OBUF (led<7>)
-    ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 10 / 10
+  Total number of paths / destination ports: 18 / 18
 -------------------------------------------------------------------------
-Offset:              3.668ns (Levels of Logic = 1)
-  Source:            image_transmit/pulse_transmit/counter7/ultrasound_pulse (FF)
-  Destination:       ultrasound_pulses<7> (PAD)
-  Source Clock:      clk falling
+Offset:              3.975ns (Levels of Logic = 1)
+  Source:            image_transmit/current_state_1 (FF)
+  Destination:       led<1> (PAD)
+  Source Clock:      clk rising
 
-  Data Path: image_transmit/pulse_transmit/counter7/ultrasound_pulse to ultrasound_pulses<7>
+  Data Path: image_transmit/current_state_1 to led<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD_1:C->Q             3   0.447   0.650  image_transmit/pulse_transmit/counter7/ultrasound_pulse (image_transmit/pulse_transmit/counter7/ultrasound_pulse)
-     OBUF:I->O                 2.571          ultrasound_pulses_7_OBUF (ultrasound_pulses<7>)
+     FDS:C->Q             14   0.447   0.957  image_transmit/current_state_1 (image_transmit/current_state_1)
+     OBUF:I->O                 2.571          led_1_OBUF (led<1>)
     ----------------------------------------
-    Total                      3.668ns (3.018ns logic, 0.650ns route)
-                                       (82.3% logic, 17.7% route)
+    Total                      3.975ns (3.018ns logic, 0.957ns route)
+                                       (75.9% logic, 24.1% route)
 
 =========================================================================
 
@@ -968,28 +943,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.705|    4.104|    4.612|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock receiver/new_data
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    3.586|         |
+clk            |    5.987|    4.050|    4.612|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 15.91 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.48 secs
  
 --> 
 
-Total memory usage is 193588 kilobytes
+Total memory usage is 199604 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   50 (   0 filtered)
-Number of infos    :   16 (   0 filtered)
+Number of warnings :   49 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
 

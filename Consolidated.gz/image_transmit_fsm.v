@@ -18,7 +18,9 @@ module image_transmit_fsm(clk,
 							afe_switch,
 							busy,
 							received_data, new_received_data,
-							mem_clear
+							mem_clear,
+							current_state,
+							current_aline
 							);
 
 	//parameter definitions
@@ -31,7 +33,7 @@ module image_transmit_fsm(clk,
 	output wire afe_switch;
 	output reg transmit_in_progress, busy;
 	
-	reg [2:0] current_state;
+	output reg [2:0] current_state;
 	reg [2:0] next_state;
 	
 	wire config_storage_intaking, config_storage_updating_delays, aline_transmit_in_progress, aline_transmit_complete;
@@ -44,7 +46,7 @@ module image_transmit_fsm(clk,
 	wire [15:0] delay_ch0, delay_ch1, delay_ch2, delay_ch3, delay_ch4, delay_ch5, delay_ch6, delay_ch7;
 	
 	reg config_storage_wr_en, config_storage_rd_en, start_us_transmit, input_delay_data_transmit_fsm, next_aline;
-	reg [3:0] current_aline;
+	output reg [3:0] current_aline;
 	//assign pulse_shap = 32'b1;
 	//assign num_aline = 5'b10001;
 	//assign used_channel = 8'b11111111;
@@ -88,11 +90,16 @@ aline_transmit_fsm pulse_transmit(.clk(clk), .rst(rst), .used_counters(used_chan
 				
 				if (~config_storage_intaking & ~aline_transmit_in_progress) begin
 					if (start_transmit) begin
-						next_state <= `RETRIEVE_DELAYS;
-						busy <= 0;
+						if (num_alines[4]) begin
+							next_state <= `RETRIEVE_DELAYS;
+							busy <= 0;
+						end else begin
+							busy <= 0;
+							next_state <= `IMAGE_TRANSMIT_IDLE;							
+						end
 					end else begin
 						busy <= 0;
-						next_state <= `IMAGE_TRANSMIT_IDLE;
+						next_state <= `IMAGE_TRANSMIT_IDLE;	
 					end
 				end else begin
 					next_state <= `IMAGE_TRANSMIT_IDLE;
@@ -158,15 +165,14 @@ aline_transmit_fsm pulse_transmit(.clk(clk), .rst(rst), .used_counters(used_chan
 				input_delay_data_transmit_fsm <= 0;
 				//next_aline <= 0;
 				
-				if (current_aline <= num_alines[3:0]) begin
-					if (mem_clear) begin
+				if (mem_clear) begin
+					if (current_aline < num_alines[3:0]) begin
 						next_state <= `RETRIEVE_DELAYS;
-						
 					end else begin
-						next_state <= `NEXT_ALINE;
+						next_state <= `IMAGE_TRANSMIT_IDLE;
 					end
 				end else begin
-					next_state <= `IMAGE_TRANSMIT_IDLE;
+					next_state <= `NEXT_ALINE;
 				end
 				
 			end

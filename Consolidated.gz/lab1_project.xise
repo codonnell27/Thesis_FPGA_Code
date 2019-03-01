@@ -451,11 +451,11 @@
     <!-- include files.                                                       -->
     <file xil_pn:name="transmit_counter_defines.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="store_configs_defines.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="image_transmit_fsm_defines.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="uart_main_defines.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="transmit_fsm_defines.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="uart_receive_defines.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="uart_transmit_fsm_defines.v" xil_pn:type="FILE_VERILOG"/>
-    <file xil_pn:name="image_transmit_fsm_defines.v" xil_pn:type="FILE_VERILOG"/>
   </autoManagedFiles>
 
 </project>

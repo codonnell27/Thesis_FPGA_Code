@@ -21,11 +21,19 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 	//parameter definitions
 
 	//parameter definitions
+	parameter test = 1'b1;
 	parameter handshake = 3'b110;
 	wire [4:0] max_addr;
 	assign max_addr = 5'b11111;
 	wire [1:0] rd_count_max;
 	assign rd_count_max = 2'b10;
+	
+	
+	//dummy configuration data for test purposes
+	parameter test_channels = 8'b11111111;
+	parameter test_alines = 5'b10011;
+	parameter test_pulse_shape = 32'd1;
+	
 
 	//port definitions - customize for different bit widths
 	input wire rst, clk, new_data, wr_en, rd_en;
@@ -37,6 +45,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 	output reg [4:0] aline_select;
 	output reg [31:0] pulse_shape;
 	output reg [15:0] ch0delay, ch1delay, ch2delay, ch3delay, ch4delay, ch5delay, ch6delay, ch7delay;
+	
 	
 	
 	wire [7:0] ch0_data_out, ch1_data_out, ch2_data_out, ch3_data_out, ch4_data_out, ch5_data_out, ch6_data_out, ch7_data_out;
@@ -80,12 +89,18 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 				ch6_wr_en <= 0;
 				ch7_wr_en <= 0;
 				
+				if (test) begin
+					channel_select <= test_channels;
+					aline_select <= test_alines;
+					pulse_shape <= test_pulse_shape;
+				end
+				
 			
 				if (rd_en) begin
 					next_state <= `READ_DELAY1;
 					updating_delays <= 1;
 					rd_count <= 3'd0;
-				end else if (new_data & wr_en) begin
+				end else if (new_data & wr_en & ~test) begin
 					if (uart_data[7:5] == handshake) begin
 						next_state <= `CHANNEL_SELECT1_LOAD; 
 					end else begin

@@ -5,10 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"Z:/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 54: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">aline_select</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"Z:/VM_Shared_folder/Thesis/Consolidated.gz/image_transmit_fsm.v" Line 60: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">pulse_sent</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"Z:/VM_Shared_folder/Thesis/Consolidated.gz/image_fsm_test.v" Line 42: Port <arg fmt="%s" index="1">current_state</arg> is not connected to this instance
 </msg>
 
 </messages>

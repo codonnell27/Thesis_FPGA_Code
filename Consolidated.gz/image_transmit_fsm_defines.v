@@ -12,7 +12,7 @@
 `ifndef image_transmit_fsm_defines
 `define image_transmit_fsm_defines
 
-`define IMAGE_TRANSMIT_IDLE		3'b000
+`define IMAGE_TRANSMIT_IDLE		3'b111
 `define RETRIEVE_DELAYS 			3'b001
 `define START_TRANSMIT 				3'b010
 `define NEXT_ALINE 					3'b011

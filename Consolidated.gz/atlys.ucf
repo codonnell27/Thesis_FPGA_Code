@@ -7,10 +7,10 @@
 //NET "receiver/data[6]" MAXDELAY =  5ns;
 //NET "receiver/data[7]" MAXDELAY =  5ns;
 
-NET "afe_switch" LOC = U16;
-NET "ultrasound_pulses[0]" LOC = U15;
-NET "ultrasound_pulses[1]" LOC = U13;
-NET "ultrasound_pulses[2]" LOC = M11;
+NET "afe_switch" LOC = T3;
+NET "ultrasound_pulses[0]" LOC = R3;
+NET "ultrasound_pulses[1]" LOC = P6;
+NET "ultrasound_pulses[2]" LOC = N5;
 NET "ultrasound_pulses[3]" LOC = R11;
 NET "ultrasound_pulses[4]" LOC = T12;
 NET "ultrasound_pulses[5]" LOC = N10;

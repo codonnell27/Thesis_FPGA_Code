@@ -76,6 +76,26 @@ module image_fsm_test;
 		mem_clear = 1;
 		#10
 		mem_clear = 0;
+		
+		#700;
+		mem_clear = 1;
+		#10
+		mem_clear = 0;
+		
+		#700;
+		mem_clear = 1;
+		#10
+		mem_clear = 0;
+		
+		#700;
+		mem_clear = 1;
+		#10
+		mem_clear = 0;
+		
+		#700;
+		mem_clear = 1;
+		#10
+		mem_clear = 0;
 		// Add stimulus here
 
 	end
