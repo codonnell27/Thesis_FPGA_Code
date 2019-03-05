@@ -43,7 +43,7 @@ module main(led,
 	wire transmit_in_progress, busy;
 	wire mem_clear, start_us_transmit;
 	wire [7:0] used_channels, pulse_sent;
-	wire [4:0] num_alines;
+	wire [4:0] num_alines, current_store_state;
 	wire [31:0] pulse_shape;
 	wire [15:0] delay_ch0, delay_ch1, delay_ch2, delay_ch3, delay_ch4, delay_ch5, delay_ch6, delay_ch7;
 	wire [2:0] image_transmit_current_state;
@@ -59,12 +59,12 @@ module main(led,
 	image_transmit_fsm image_transmit (.clk(clk), .rst(rst), .start_transmit(start_us_transmit),
 							.transmit_in_progress(transmit_in_progress), .ultrasound_pulses(ultrasound_pulses), .afe_switch(afe_switch), .busy(busy), 
 							.received_data(received_data), .new_received_data(new_received_data), .mem_clear(mem_clear), 
-							.current_state(image_transmit_current_state), .current_aline(current_image_aline)
+							.current_state(image_transmit_current_state), .current_aline(current_image_aline), .current_store_state(current_store_state)
 							);
 	
-	assign send_data = switch;
+	assign send_data = switch; 
 	
-	assign led[2:0] =  image_transmit_current_state;
+	assign led[2:0] = current_store_state[2:0];
 	assign led[6:3] = current_image_aline;
 	//assign led[4] = afe_switch;
 	//assign led[5] = new_received_data;	

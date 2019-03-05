@@ -12,6 +12,7 @@
 `include "store_configs_defines.v"
 module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_delays, wr_en, rd_en,
 		channel_select,
+		current_state,
 		aline_select, //holds no. of alines used in this image
 		pulse_shape,
 		which_aline, //selects with aline's data will be read from memory
@@ -21,7 +22,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 	//parameter definitions
 
 	//parameter definitions
-	parameter test = 1'b1;
+	parameter test = 1'b0;
 	parameter handshake = 3'b110;
 	wire [4:0] max_addr;
 	assign max_addr = 5'b11111;
@@ -32,7 +33,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 	//dummy configuration data for test purposes
 	parameter test_channels = 8'b11111111;
 	parameter test_alines = 5'b10011;
-	parameter test_pulse_shape = 32'd1;
+	parameter test_pulse_shape = 32'd31;
 	
 
 	//port definitions - customize for different bit widths
@@ -53,8 +54,8 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 	reg [1:0] rd_count; 
 	//port definitions - customize for different bit widths
 
-	reg [4:0] current_state, next_state;
-	reg [4:0] addr;
+	output reg [4:0] current_state;
+	reg [4:0] addr, next_state;
 	
 	
 	ch_aline_storage ch0 (.clk(clk), .rst(rst), .addr(addr), .data_in(uart_data), .data_out(ch0_data_out), .wr_en(ch0_wr_en));
