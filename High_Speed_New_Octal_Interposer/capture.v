@@ -19,7 +19,9 @@ module capture(rst, wren, cntrl_bits,
 					din_cp, din_cn, din_dp, din_dn,  
 					din_ep, din_en, din_fp, din_fn,  
 					din_gp, din_gn, din_hp, din_hn,
-					doutA, doutB, clkout, load, dco_locked, fco_locked);
+					doutA, doutB, doutC, doutD,
+					doutE, doutF, doutG, doutH,
+					clkout, load, dco_locked, fco_locked);
 
 input rst, wren; 
 input dco_p, dco_n;
@@ -37,6 +39,12 @@ input [5:0] cntrl_bits;
 output clkout, load;          
 output [13:0] doutA; 
 output [13:0] doutB; 
+output [13:0] doutC; 
+output [13:0] doutD;
+output [13:0] doutE; 
+output [13:0] doutF;
+output [13:0] doutG; 
+output [13:0] doutH;
 output dco_locked;
 output fco_locked;
 
@@ -52,6 +60,12 @@ reg [6:0] dat_q1_h, dat_q2_h;
 
 reg [13:0] doutA;
 reg [13:0] doutB;
+reg [13:0] doutC;
+reg [13:0] doutD;
+reg [13:0] doutE;
+reg [13:0] doutF;
+reg [13:0] doutG;
+reg [13:0] doutH;
 
 reg [13:0] dout_a, dout_b;
 reg [13:0] dout_c, dout_d;
@@ -263,34 +277,18 @@ always @(posedge dco)
 						 dat_q1_h[0], dat_q2_h[0]};
 		end
 	
-always @(posedge dco)
-	if (fcostb)
-	
-		case(cntrl_bits[2:0])
-			3'b000: doutA <= dout_a;
-			3'b001: doutA <= dout_b;
-			3'b010: doutA <= dout_c;
-			3'b011: doutA <= dout_d;
-			3'b100: doutA <= dout_e;
-			3'b101: doutA <= dout_f;
-			3'b110: doutA <= dout_g;
-			3'b111: doutA <= dout_h;
-		endcase
+always @(posedge dco) begin
+	doutA <= dout_a;
+	doutB <= dout_b;
+	doutC <= dout_c;
+	doutD <= dout_d;
+	doutE <= dout_e;
+	doutF <= dout_f;
+	doutG <= dout_g;
+	doutH <= dout_h;
+
+end
 		
-always @(posedge dco)
-	if (fcostb)
-	
-		case(cntrl_bits[5:3])
-			3'b000: doutB <= dout_a;
-			3'b001: doutB <= dout_b;
-			3'b010: doutB <= dout_c;
-			3'b011: doutB <= dout_d;
-			3'b100: doutB <= dout_e;
-			3'b101: doutB <= dout_f;
-			3'b110: doutB <= dout_g;
-			3'b111: doutB <= dout_h;
-		endcase
- 
 
 assign clkout = fco;
 

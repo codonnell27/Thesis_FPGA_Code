@@ -78,7 +78,14 @@ module uart_receive(receiving, data, clk, uart_tx, rst, new_data);
 				bitTmr <= bitTmr + 1;
 				receiving <= 1;
 				if (bitIndex == bit_max) begin
-					data <= tx_data[8:1];
+					data[0] <= tx_data[8];
+					data[1] <= tx_data[7];
+					data[2] <= tx_data[6];
+					data[3] <= tx_data[5];
+					data[4] <= tx_data[4];
+					data[5] <= tx_data[3];
+					data[6] <= tx_data[2];
+					data[7] <= tx_data[1];
 					new_data <= 1;	
 				end
 				

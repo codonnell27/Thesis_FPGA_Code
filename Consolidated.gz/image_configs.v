@@ -15,6 +15,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 		current_state,
 		aline_select, //holds no. of alines used in this image
 		pulse_shape,
+		addr,
 		which_aline, //selects with aline's data will be read from memory
 		ch0delay, ch1delay, ch2delay, ch3delay, ch4delay, ch5delay, ch6delay, ch7delay
 		);
@@ -54,8 +55,8 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 	reg [1:0] rd_count; 
 	//port definitions - customize for different bit widths
 
-	output reg [4:0] current_state;
-	reg [4:0] addr, next_state;
+	output reg [4:0] addr, current_state;
+	reg [4:0]  next_state;
 	
 	
 	ch_aline_storage ch0 (.clk(clk), .rst(rst), .addr(addr), .data_in(uart_data), .data_out(ch0_data_out), .wr_en(ch0_wr_en));
@@ -252,6 +253,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 			`PULSE4_HOLD: begin
 				if (new_data) begin
 					next_state <= 	`CH0_LOAD;
+
 				end else begin
 					next_state <= 	`PULSE4_HOLD;
 				end
@@ -263,6 +265,8 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					next_state <= 	`CH0_LOAD;
 				end else begin
 					next_state <= 	`CH0_HOLD;
+					//ch1_wr_en <= 0;
+					//addr <= addr + 1;
 				end				
 			end
 			
@@ -287,6 +291,8 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					next_state <= 	`CH1_LOAD;
 				end else begin
 					next_state <= 	`CH1_HOLD;
+					//ch1_wr_en <= 0;
+					//addr <= addr + 1;
 				end				
 			end
 			
@@ -312,6 +318,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					next_state <= 	`CH2_LOAD;
 				end else begin
 					next_state <= 	`CH2_HOLD;
+					//addr <= addr + 1;
 				end				
 			end
 			
@@ -337,6 +344,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					next_state <= 	`CH3_LOAD;
 				end else begin
 					next_state <= 	`CH3_HOLD;
+					//addr <= addr + 1;
 				end				
 			end
 			
@@ -362,6 +370,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					next_state <= 	`CH4_LOAD;
 				end else begin
 					next_state <= 	`CH4_HOLD;
+					//addr <= addr + 1;
 				end				
 			end
 			
@@ -386,6 +395,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					next_state <= 	`CH5_LOAD;
 				end else begin
 					next_state <= 	`CH5_HOLD;
+					//addr <= addr + 1;
 				end				
 			end
 			
@@ -410,6 +420,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					next_state <= 	`CH6_LOAD;
 				end else begin
 					next_state <= 	`CH6_HOLD;
+					//addr <= addr + 1;
 				end				
 			end
 			
@@ -434,6 +445,7 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					next_state <= 	`CH7_LOAD;
 				end else begin
 					next_state <= 	`CH7_HOLD;
+					//addr <= addr + 1;
 				end				
 			end
 			

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CS141::  Mon Mar 04 16:43:26 2019
+CS141::  Tue Mar 05 18:08:32 2019
 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 
@@ -31,7 +31,7 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      1,245 out of  27,288    4%
+  Number of Slice LUTs:                      1,224 out of  27,288    4%
     Number used as logic:                      977 out of  27,288    3%
       Number using O6 output only:             527
       Number using O5 output only:             124
@@ -47,18 +47,18 @@ Slice Logic Utilization:
         Number using O6 output only:             1
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:    235
-      Number with same-slice register load:    226
+    Number used exclusively as route-thrus:    214
+      Number with same-slice register load:    205
       Number with same-slice carry load:         9
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   432 out of   6,822    6%
+  Number of occupied Slices:                   430 out of   6,822    6%
   Number of MUXCYs used:                       304 out of  13,644    2%
-  Number of LUT Flip Flop pairs used:        1,336
-    Number with an unused Flip Flop:           498 out of   1,336   37%
-    Number with an unused LUT:                  91 out of   1,336    6%
-    Number of fully used LUT-FF pairs:         747 out of   1,336   55%
+  Number of LUT Flip Flop pairs used:        1,343
+    Number with an unused Flip Flop:           484 out of   1,343   36%
+    Number with an unused LUT:                 119 out of   1,343    8%
+    Number of fully used LUT-FF pairs:         740 out of   1,343   55%
     Number of slice register sites lost
       to control set restrictions:               0 out of  54,576    0%
 
@@ -108,34 +108,29 @@ WARNING:Par:288 - The signal bouncy_btns<4>_IBUF has no load.  PAR will not atte
 Starting Router
 
 
-Phase  1  : 6026 unrouted;      REAL time: 6 secs 
+Phase  1  : 6024 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 5149 unrouted;      REAL time: 7 secs 
+Phase  2  : 5146 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 1421 unrouted;      REAL time: 11 secs 
+Phase  3  : 1483 unrouted;      REAL time: 10 secs 
 
-Phase  4  : 1427 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  4  : 1485 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
 Updating file: main.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
-WARNING:Route:452 - 
-    Not all timing constraints have been achieved.  Please consult the `Post-Place & Route Static Timing Report' to determine the actual
-   timing results.  For suggestions on how to work around this problem go to http://support.xilinx.com and `Search Answers Database' using
-   the text of this message.
-
 Total REAL time to Router completion: 16 secs 
-Total CPU time to Router completion: 16 secs 
+Total CPU time to Router completion: 15 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -146,7 +141,7 @@ Partition Implementation Status
 
 Generating "PAR" statistics.
 INFO:Par:459 - The Clock Report is not displayed in the non timing-driven mode.
-Timing Score: 120345 (Setup: 120345, Hold: 0)
+Timing Score: 0 (Setup: 0, Hold: 0)
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -155,12 +150,12 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    12.416ns|     N/A|      120345
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     8.023ns|     N/A|           0
   _BUFGP                                    | HOLD        |     0.384ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
-1 constraint not met.
+All constraints were met.
 INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
    constraint is not analyzed due to the following: No paths covered by this 
    constraint; Other constraints intersect with this constraint; or This 
@@ -174,8 +169,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 21 secs 
-Total CPU time to PAR completion: 20 secs 
+Total REAL time to PAR completion: 18 secs 
+Total CPU time to PAR completion: 18 secs 
 
 Peak Memory Usage:  309 MB
 
@@ -183,7 +178,7 @@ Placer: Placement generated during map.
 Routing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 4
+Number of warning messages: 3
 Number of info messages: 2
 
 Writing design to file main.ncd

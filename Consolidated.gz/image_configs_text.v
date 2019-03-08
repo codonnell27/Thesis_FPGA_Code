@@ -36,8 +36,10 @@ module image_configs_text;
 	// Outputs
 	wire intaking_configs;
 	wire updating_delays;
+	wire [4:0] current_state;
 	wire [7:0] channel_select;
 	wire [4:0] aline_select;
+	wire [4:0] addr;
 	wire [31:0] pulse_shape;
 	wire [15:0] ch0delay;
 	wire [15:0] ch1delay;
@@ -58,9 +60,11 @@ module image_configs_text;
 		.updating_delays( updating_delays),
 		.wr_en(wr_en), 
 		.rd_en(rd_en), 
+		.current_state(current_state),
 		.channel_select(channel_select), 
 		.aline_select(aline_select), 
 		.pulse_shape(pulse_shape), 
+		.addr(addr),
 		.which_aline(which_aline), 
 		.ch0delay(ch0delay), 
 		.ch1delay(ch1delay), 
@@ -90,14 +94,14 @@ module image_configs_text;
 		#10;
 		rd_en = 0;
 		#50;
-		uart_data = 8'b00011011;
+		uart_data = 8'b11011111;
 		#2000;
 		uart_data = 8'd0;
 		wr_en = 0;
-		#24500;
-		rd_en = 1;
+		//#24500;
+		//rd_en = 1;
 		#10;
-		rd_en = 0;
+		//rd_en = 0;
 		
 		
 		

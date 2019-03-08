@@ -41,15 +41,13 @@ module main(led,
 	reg [2:0] next_state;
 	
 	wire transmit_in_progress, busy;
-	wire mem_clear, start_us_transmit;
+	wire mem_clear, start_us_transmit, config_storage_intaking;
 	wire [7:0] used_channels, pulse_sent;
-	wire [4:0] num_alines, current_store_state;
+	wire [4:0] num_alines, store_addr, current_store_state;
 	wire [31:0] pulse_shape;
 	wire [15:0] delay_ch0, delay_ch1, delay_ch2, delay_ch3, delay_ch4, delay_ch5, delay_ch6, delay_ch7;
 	wire [2:0] image_transmit_current_state;
 	wire [3:0] current_image_aline;
-	
-	
 
 
 	btn_debouce btns (.btn_i(bouncy_btns), .btn_o(db_btns), .clk(clk), .btns_posedge(btns_posedge));
@@ -59,17 +57,19 @@ module main(led,
 	image_transmit_fsm image_transmit (.clk(clk), .rst(rst), .start_transmit(start_us_transmit),
 							.transmit_in_progress(transmit_in_progress), .ultrasound_pulses(ultrasound_pulses), .afe_switch(afe_switch), .busy(busy), 
 							.received_data(received_data), .new_received_data(new_received_data), .mem_clear(mem_clear), 
-							.current_state(image_transmit_current_state), .current_aline(current_image_aline), .current_store_state(current_store_state)
+							.current_state(image_transmit_current_state), .current_aline(current_image_aline), .current_store_state(current_store_state),
+							.config_storage_intaking(config_storage_intaking), .store_addr(store_addr)
 							);
 	
 	assign send_data = switch; 
 	
-	assign led[2:0] = current_store_state[2:0];
-	assign led[6:3] = current_image_aline;
+	assign led[3:0] = current_store_state[3:0];
+	//assign led[6:3] = current_image_aline;
+	assign led[7:4] = store_addr;
 	//assign led[4] = afe_switch;
 	//assign led[5] = new_received_data;	
-	//assign led[6] = busy;	
-	assign led[7] = transmit_in_progress;	
+	//assign led[6] = config_storage_intaking;	
+	//assign led[7] = transmit_in_progress;	
 	
 	
 	assign rst = db_btns[0]; //center btn is reset

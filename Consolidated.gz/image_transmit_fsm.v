@@ -19,7 +19,9 @@ module image_transmit_fsm(clk,
 							busy,
 							received_data, new_received_data,
 							current_store_state,
+							config_storage_intaking,
 							mem_clear,
+							store_addr,
 							current_state,
 							current_aline
 							);
@@ -31,14 +33,14 @@ module image_transmit_fsm(clk,
 	input wire [7:0] received_data;
 
 	output wire [7:0] ultrasound_pulses;
-	output wire afe_switch;
-	output wire [4:0] current_store_state;
+	output wire config_storage_intaking, afe_switch;
+	output wire [4:0] store_addr, current_store_state;
 	output reg transmit_in_progress, busy;
 	
 	output reg [2:0] current_state;
 	reg [2:0] next_state;
 	
-	wire config_storage_intaking, config_storage_updating_delays, aline_transmit_in_progress, aline_transmit_complete;
+	wire  config_storage_updating_delays, aline_transmit_in_progress, aline_transmit_complete;
 	wire [7:0] used_channels, pulse_sent; 
 	wire [4:0] num_alines;
 	wire [31:0] pulse_shape;
@@ -53,7 +55,7 @@ module image_transmit_fsm(clk,
 	//assign num_aline = 5'b10001;
 	//assign used_channel = 8'b11111111;
 
-image_configs store_configs (.uart_data(received_data), .rst(rst), .clk(clk), .new_data(new_received_data), .current_state(current_store_state), 
+image_configs store_configs (.uart_data(received_data), .rst(rst), .clk(clk), .new_data(new_received_data), .current_state(current_store_state), .addr(store_addr),
 										.intaking_configs(config_storage_intaking), .updating_delays(config_storage_updating_delays), .wr_en(config_storage_wr_en), .rd_en(config_storage_rd_en),
 										.channel_select(used_channels), .aline_select(num_alines), .pulse_shape(pulse_shape), .which_aline(current_aline), 
 										.ch0delay(delay_ch0), .ch1delay(delay_ch1), .ch2delay(delay_ch2), .ch3delay(delay_ch3), .ch4delay(delay_ch4), .ch5delay(delay_ch5), .ch6delay(delay_ch6), .ch7delay(delay_ch7));

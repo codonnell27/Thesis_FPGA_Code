@@ -16,23 +16,24 @@ module uart_transmit(send, data, clk, ready, uart_tx, rst);
 	parameter line_length = 8;
 	parameter line_handshake_length = 4;
 	parameter tmr_length = 14;
-	wire [tmr_length-1:0] bitTmrMax = 14'b010100010110000;
+	wire [tmr_length-1:0] bitTmrMax = 14'b010100010110000; //the number of clock cycles for 9600 baud
 	
 	
 	//port definitions - customize for different bit widths
-	input wire clk, rst, send;
-	input wire [line_length-1:0] data;
+	input wire clk, rst, send; //send & rst are active high
+	input wire [line_length-1:0] data; //the data to be transmitted
 	
-	output reg ready;
-	output wire uart_tx ;
+	output reg ready; //flag; when high, the module isn't doing something and is ready to transmit
+	output wire uart_tx; //the uart output wire
 	
 	
 	reg [line_handshake_length -1:0] bitIndex; 
-	reg [7:0] latched_data;
-	wire [9:0] tx_data;
+	reg [line_length-1:0] latched_data; //so changing data won't change the line being sent halfway through sending
+	wire [line_length+1:0] tx_data; //the ten-bit uart data line, includes start and stop bit
 	reg txBit;
 	reg [tmr_length-1:0] bitTmr;
-	reg [1:0] current_state;
+
+	reg [1:0] current_state; //for fsm
 	reg [1:0] next_state;
 	
 	wire [line_handshake_length -1:0] bit_max = 4'd10;
