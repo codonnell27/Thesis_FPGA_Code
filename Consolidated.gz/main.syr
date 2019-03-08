@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.80 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.98 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.80 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.98 secs
  
 --> Reading design: main.prj
 
@@ -146,14 +146,14 @@ Elaborating module <btn_debouce>.
 Elaborating module <one_btn_debounce>.
 
 Elaborating module <uart_transmit>.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 80: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 88: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 81: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 89: Result of 15-bit expression is truncated to fit in 14-bit target.
 
 Elaborating module <uart_receive>.
 WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 78: Result of 15-bit expression is truncated to fit in 14-bit target.
 WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 106: Result of 15-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 55: Assignment to receiving_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 56: Assignment to receiving_data ignored, since the identifier is never used
 
 Elaborating module <image_transmit_fsm>.
 
@@ -190,10 +190,9 @@ WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis
 WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\transmit_fsm.v" Line 158: Assignment to count_complete ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" Line 66: Assignment to aline_transmit_complete ignored, since the identifier is never used
 WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" Line 158: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 58: Assignment to transmit_in_progress ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 60: Assignment to image_transmit_current_state ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 61: Assignment to config_storage_intaking ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 68: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 59: Assignment to transmit_in_progress ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 61: Assignment to image_transmit_current_state ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 62: Assignment to config_storage_intaking ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -203,12 +202,12 @@ Synthesizing Unit <main>.
     Related source file is "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v".
         num_btns = 5
         data_ln_len = 8
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 55: Output port <receiving> of the instance <receiver> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 57: Output port <current_state> of the instance <image_transmit> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 57: Output port <current_aline> of the instance <image_transmit> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 57: Output port <transmit_in_progress> of the instance <image_transmit> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 57: Output port <busy> of the instance <image_transmit> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 57: Output port <config_storage_intaking> of the instance <image_transmit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 56: Output port <receiving> of the instance <receiver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 58: Output port <store_addr> of the instance <image_transmit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 58: Output port <current_state> of the instance <image_transmit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 58: Output port <transmit_in_progress> of the instance <image_transmit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 58: Output port <busy> of the instance <image_transmit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" line 58: Output port <config_storage_intaking> of the instance <image_transmit> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <start_transmit>.
     Found 3-bit register for signal <next_state>.
     Found 3-bit register for signal <current_state>.
@@ -244,11 +243,11 @@ Synthesizing Unit <uart_transmit>.
     Found 1-bit register for signal <txBit>.
     Found 8-bit register for signal <latched_data>.
     Found 2-bit register for signal <current_state>.
-    Found 4-bit adder for signal <bitIndex[3]_GND_4_o_add_9_OUT> created at line 80.
-    Found 14-bit adder for signal <bitTmr[13]_GND_4_o_add_11_OUT> created at line 88.
-    Found 1-bit 10-to-1 multiplexer for signal <bitIndex[3]_X_4_o_Mux_10_o> created at line 81.
-    Found 14-bit comparator greater for signal <bit_done_INV_4_o> created at line 39
-    Found 4-bit comparator greater for signal <bitIndex[3]_bit_max[3]_LessThan_13_o> created at line 94
+    Found 4-bit adder for signal <bitIndex[3]_GND_4_o_add_9_OUT> created at line 81.
+    Found 14-bit adder for signal <bitTmr[13]_GND_4_o_add_11_OUT> created at line 89.
+    Found 1-bit 10-to-1 multiplexer for signal <bitIndex[3]_X_4_o_Mux_10_o> created at line 82.
+    Found 14-bit comparator greater for signal <bit_done_INV_4_o> created at line 40
+    Found 4-bit comparator greater for signal <bitIndex[3]_bit_max[3]_LessThan_13_o> created at line 95
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -789,10 +788,10 @@ Primitive and Black Box Usage:
 # Shift Registers                  : 1
 #      SRLC16E                     : 1
 # Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 31
-#      IBUF                        : 13
-#      OBUF                        : 18
+#      BUFG                        : 1
+# IO Buffers                       : 33
+#      IBUF                        : 14
+#      OBUF                        : 19
 
 Device utilization summary:
 ---------------------------
@@ -816,8 +815,8 @@ Slice Logic Distribution:
    Number of unique control sets:        57
 
 IO Utilization: 
- Number of IOs:                          33
- Number of bonded IOBs:                  32  out of    218    14%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  33  out of    218    15%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -843,7 +842,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 1297  |
+clk                                | IBUF+BUFG              | 1297  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -857,7 +856,7 @@ Speed Grade: -3
    Minimum period: 8.308ns (Maximum Frequency: 120.371MHz)
    Minimum input arrival time before clock: 2.425ns
    Maximum output required time after clock: 5.073ns
-   Maximum combinational path delay: No path found
+   Maximum combinational path delay: 4.372ns
 
 Timing Details:
 ---------------
@@ -942,6 +941,24 @@ Offset:              5.073ns (Levels of Logic = 1)
                                        (59.5% logic, 40.5% route)
 
 =========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.372ns (Levels of Logic = 2)
+  Source:            clk (PAD)
+  Destination:       clk_out (PAD)
+
+  Data Path: clk to clk_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  clk_IBUF (clk_out_OBUF)
+     OBUF:I->O                 2.571          clk_out_OBUF (clk_out)
+    ----------------------------------------
+    Total                      4.372ns (3.793ns logic, 0.579ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
@@ -957,14 +974,14 @@ clk            |    5.705|    4.080|    4.612|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 13.89 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.20 secs
  
 --> 
 
-Total memory usage is 199604 kilobytes
+Total memory usage is 192756 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   51 (   0 filtered)
+Number of warnings :   50 (   0 filtered)
 Number of infos    :   18 (   0 filtered)
 

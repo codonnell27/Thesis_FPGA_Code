@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 80: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 81: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 88: Result of <arg fmt="%d" index="1">15</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">14</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_transmit.v" Line 89: Result of <arg fmt="%d" index="1">15</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">14</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 67: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
@@ -20,7 +20,7 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\uart_receive.v" Line 106: Result of <arg fmt="%d" index="1">15</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">14</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 55: Assignment to <arg fmt="%s" index="1">receiving_data</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 56: Assignment to <arg fmt="%s" index="1">receiving_data</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 130: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
@@ -89,34 +89,31 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v" Line 158: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 58: Assignment to <arg fmt="%s" index="1">transmit_in_progress</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 59: Assignment to <arg fmt="%s" index="1">transmit_in_progress</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 60: Assignment to <arg fmt="%s" index="1">image_transmit_current_state</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 61: Assignment to <arg fmt="%s" index="1">image_transmit_current_state</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 61: Assignment to <arg fmt="%s" index="1">config_storage_intaking</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 62: Assignment to <arg fmt="%s" index="1">config_storage_intaking</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 68: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">56</arg>: Output port &lt;<arg fmt="%s" index="3">receiving</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">receiver</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">55</arg>: Output port &lt;<arg fmt="%s" index="3">receiving</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">receiver</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">store_addr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">current_state</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">current_state</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">current_aline</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">transmit_in_progress</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">transmit_in_progress</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">busy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">busy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">config_storage_intaking</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">config_storage_intaking</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">image_transmit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_transmit_fsm.v</arg>&quot; line <arg fmt="%s" index="2">63</arg>: Output port &lt;<arg fmt="%s" index="3">transmit_complete</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pulse_transmit</arg>&gt; is unconnected or connected to loadless signal.

@@ -15,6 +15,7 @@
 module main(led, 
 			uart_o, 
 			uart_i, 
+			clk_out,
 			clk, 
 			bouncy_btns, 
 			switch, 
@@ -26,7 +27,7 @@ module main(led,
 
 
 	output wire [7:0] led; 
-	output wire uart_o, afe_switch; 
+	output wire uart_o, afe_switch, clk_out; 
 	output wire [7:0] ultrasound_pulses;
 	input wire [7:0] switch;
 	input wire clk, uart_i;
@@ -62,10 +63,11 @@ module main(led,
 							);
 	
 	assign send_data = switch; 
+	assign clk_out = clk;
 	
 	assign led[3:0] = current_store_state[3:0];
-	//assign led[6:3] = current_image_aline;
-	assign led[7:4] = store_addr;
+	assign led[7:4] = current_image_aline;
+	//assign led[7:4] = store_addr;
 	//assign led[4] = afe_switch;
 	//assign led[5] = new_received_data;	
 	//assign led[6] = config_storage_intaking;	

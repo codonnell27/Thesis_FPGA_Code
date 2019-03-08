@@ -1,18 +1,17 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Mar 05 18:08:27 2019
+// Written by: Map P.20131013 on Fri Mar 08 11:27:54 2019
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "ultrasound_pulses<0>" LOCATE = SITE "U15" LEVEL 1;
-COMP "ultrasound_pulses<1>" LOCATE = SITE "U13" LEVEL 1;
-COMP "ultrasound_pulses<2>" LOCATE = SITE "M11" LEVEL 1;
-COMP "ultrasound_pulses<3>" LOCATE = SITE "R11" LEVEL 1;
-COMP "ultrasound_pulses<4>" LOCATE = SITE "T12" LEVEL 1;
-COMP "ultrasound_pulses<5>" LOCATE = SITE "N10" LEVEL 1;
-COMP "ultrasound_pulses<6>" LOCATE = SITE "M10" LEVEL 1;
-COMP "ultrasound_pulses<7>" LOCATE = SITE "U11" LEVEL 1;
+COMP "ultrasound_pulses<0>" LOCATE = SITE "R3" LEVEL 1;
+COMP "ultrasound_pulses<1>" LOCATE = SITE "P6" LEVEL 1;
+COMP "ultrasound_pulses<2>" LOCATE = SITE "N5" LEVEL 1;
+COMP "ultrasound_pulses<3>" LOCATE = SITE "V9" LEVEL 1;
+COMP "ultrasound_pulses<4>" LOCATE = SITE "T9" LEVEL 1;
+COMP "ultrasound_pulses<5>" LOCATE = SITE "V4" LEVEL 1;
 COMP "clk" LOCATE = SITE "L15" LEVEL 1;
-COMP "afe_switch" LOCATE = SITE "U16" LEVEL 1;
+COMP "afe_switch" LOCATE = SITE "T3" LEVEL 1;
+COMP "clk_out" LOCATE = SITE "T4" LEVEL 1;
 COMP "bouncy_btns<0>" LOCATE = SITE "F5" LEVEL 1;
 COMP "bouncy_btns<1>" LOCATE = SITE "N4" LEVEL 1;
 COMP "bouncy_btns<2>" LOCATE = SITE "F6" LEVEL 1;

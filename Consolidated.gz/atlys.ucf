@@ -7,25 +7,27 @@
 //NET "receiver/data[6]" MAXDELAY =  5ns;
 //NET "receiver/data[7]" MAXDELAY =  5ns;
 
-NET "afe_switch" LOC = U16;
-NET "ultrasound_pulses[0]" LOC = U15;
-NET "ultrasound_pulses[1]" LOC = U13;
-NET "ultrasound_pulses[2]" LOC = M11;
-NET "ultrasound_pulses[3]" LOC = R11;
-NET "ultrasound_pulses[4]" LOC = T12;
-NET "ultrasound_pulses[5]" LOC = N10;
-NET "ultrasound_pulses[6]" LOC = M10;
-NET "ultrasound_pulses[7]" LOC = U11;
+NET "afe_switch" LOC = T3; //U16;
+NET "clk_out" LOC = T4;
+NET "ultrasound_pulses[0]" LOC = R3; //U15;
+NET "ultrasound_pulses[1]" LOC = P6; //U13;
+NET "ultrasound_pulses[2]" LOC = N5; //M11;
+NET "ultrasound_pulses[3]" LOC = V9; //R11;
+NET "ultrasound_pulses[4]" LOC = T9; //T12;
+NET "ultrasound_pulses[5]" LOC = V4; //N10;
+//NET "ultrasound_pulses[6]" LOC = T4; //M10;
+//NET "ultrasound_pulses[7]" LOC = U11;
 
 NET "afe_switch" IOSTANDARD = LVCMOS33;
+NET "clk_out" IOSTANDARD = LVCMOS33;
 NET "ultrasound_pulses[0]" IOSTANDARD = LVCMOS33;
 NET "ultrasound_pulses[1]" IOSTANDARD = LVCMOS33;
 NET "ultrasound_pulses[2]" IOSTANDARD = LVCMOS33;
 NET "ultrasound_pulses[3]" IOSTANDARD = LVCMOS33;
 NET "ultrasound_pulses[4]" IOSTANDARD = LVCMOS33;
 NET "ultrasound_pulses[5]" IOSTANDARD = LVCMOS33;
-NET "ultrasound_pulses[6]" IOSTANDARD = LVCMOS33;
-NET "ultrasound_pulses[7]" IOSTANDARD = LVCMOS33;
+//NET "ultrasound_pulses[6]" IOSTANDARD = LVCMOS33;
+//NET "ultrasound_pulses[7]" IOSTANDARD = LVCMOS33;
 
 NET "switch[0]" LOC = A10;
 NET "switch[1]" LOC = D14;
@@ -80,8 +82,7 @@ NET "bouncy_btns[4]" IOSTANDARD = LVCMOS33;
 
 NET "uart_i" LOC = A16;
 NET "uart_o" LOC = B16;
-NET "clk" LOC = L15;
-//NET "clk" LOC = U5;
+NET "clk" LOC = L15; //100MHz reference clk
 
 
 NET "uart_i" IOSTANDARD = LVCMOS33;

@@ -36,19 +36,19 @@ Setup/Hold to clock clk
               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source        | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 --------------+------------+------------+------------+------------+------------------+--------+
-bouncy_btns<0>|    4.380(R)|      SLOW  |   -2.780(R)|      FAST  |clk_BUFGP         |   0.000|
-bouncy_btns<1>|    0.752(R)|      FAST  |    0.059(R)|      SLOW  |clk_BUFGP         |   0.000|
-bouncy_btns<2>|    2.610(R)|      SLOW  |   -1.666(R)|      FAST  |clk_BUFGP         |   0.000|
-bouncy_btns<3>|    1.105(R)|      SLOW  |   -0.440(R)|      SLOW  |clk_BUFGP         |   0.000|
-switch<0>     |    3.703(F)|      SLOW  |   -2.228(F)|      FAST  |clk_BUFGP         |   0.000|
-switch<1>     |    5.163(F)|      SLOW  |   -3.274(F)|      FAST  |clk_BUFGP         |   0.000|
-switch<2>     |    5.268(F)|      SLOW  |   -3.287(F)|      FAST  |clk_BUFGP         |   0.000|
-switch<3>     |    3.819(F)|      SLOW  |   -2.386(F)|      FAST  |clk_BUFGP         |   0.000|
-switch<4>     |    3.923(F)|      SLOW  |   -2.495(F)|      FAST  |clk_BUFGP         |   0.000|
-switch<5>     |    4.379(F)|      SLOW  |   -2.764(F)|      FAST  |clk_BUFGP         |   0.000|
-switch<6>     |    3.770(F)|      SLOW  |   -2.418(F)|      FAST  |clk_BUFGP         |   0.000|
-switch<7>     |    3.598(F)|      SLOW  |   -2.368(F)|      FAST  |clk_BUFGP         |   0.000|
-uart_i        |    6.281(F)|      SLOW  |   -3.422(F)|      FAST  |clk_BUFGP         |   0.000|
+bouncy_btns<0>|    5.453(R)|      SLOW  |   -3.459(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+bouncy_btns<1>|    1.333(R)|      SLOW  |   -0.663(R)|      SLOW  |clk_out_OBUF_BUFG |   0.000|
+bouncy_btns<2>|    3.537(R)|      SLOW  |   -2.254(R)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+bouncy_btns<3>|    1.087(R)|      FAST  |   -0.349(R)|      SLOW  |clk_out_OBUF_BUFG |   0.000|
+switch<0>     |    3.530(F)|      SLOW  |   -2.092(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+switch<1>     |    4.681(F)|      SLOW  |   -2.940(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+switch<2>     |    4.770(F)|      SLOW  |   -2.945(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+switch<3>     |    4.356(F)|      SLOW  |   -2.660(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+switch<4>     |    3.843(F)|      SLOW  |   -2.391(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+switch<5>     |    4.515(F)|      SLOW  |   -2.809(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+switch<6>     |    4.436(F)|      SLOW  |   -2.767(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+switch<7>     |    3.204(F)|      SLOW  |   -2.049(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+uart_i        |    5.555(F)|      SLOW  |   -2.909(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
 --------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -56,24 +56,24 @@ Clock clk to Pad
                     |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination         |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 --------------------+-----------------+------------+-----------------+------------+------------------+--------+
-afe_switch          |        10.843(F)|      SLOW  |         6.369(F)|      FAST  |clk_BUFGP         |   0.000|
-led<0>              |         9.723(F)|      SLOW  |         5.677(F)|      FAST  |clk_BUFGP         |   0.000|
-led<1>              |         9.691(F)|      SLOW  |         5.648(F)|      FAST  |clk_BUFGP         |   0.000|
-led<2>              |         9.984(F)|      SLOW  |         5.875(F)|      FAST  |clk_BUFGP         |   0.000|
-led<3>              |         9.622(F)|      SLOW  |         5.649(F)|      FAST  |clk_BUFGP         |   0.000|
-led<4>              |        10.010(R)|      SLOW  |         5.885(R)|      FAST  |clk_BUFGP         |   0.000|
-led<5>              |        14.451(R)|      SLOW  |         8.475(R)|      FAST  |clk_BUFGP         |   0.000|
-led<6>              |        10.834(R)|      SLOW  |         6.310(R)|      FAST  |clk_BUFGP         |   0.000|
-led<7>              |        10.464(R)|      SLOW  |         6.104(R)|      FAST  |clk_BUFGP         |   0.000|
-uart_o              |        13.173(F)|      SLOW  |         7.722(F)|      FAST  |clk_BUFGP         |   0.000|
-ultrasound_pulses<0>|         9.775(F)|      SLOW  |         5.603(F)|      FAST  |clk_BUFGP         |   0.000|
-ultrasound_pulses<1>|         9.511(F)|      SLOW  |         5.471(F)|      FAST  |clk_BUFGP         |   0.000|
-ultrasound_pulses<2>|         9.214(F)|      SLOW  |         5.254(F)|      FAST  |clk_BUFGP         |   0.000|
-ultrasound_pulses<3>|         9.758(F)|      SLOW  |         5.657(F)|      FAST  |clk_BUFGP         |   0.000|
-ultrasound_pulses<4>|         9.134(F)|      SLOW  |         5.217(F)|      FAST  |clk_BUFGP         |   0.000|
-ultrasound_pulses<5>|         8.852(F)|      SLOW  |         4.996(F)|      FAST  |clk_BUFGP         |   0.000|
-ultrasound_pulses<6>|         8.830(F)|      SLOW  |         4.992(F)|      FAST  |clk_BUFGP         |   0.000|
-ultrasound_pulses<7>|         9.059(F)|      SLOW  |         5.137(F)|      FAST  |clk_BUFGP         |   0.000|
+afe_switch          |         9.925(F)|      SLOW  |         5.761(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+led<0>              |         9.441(F)|      SLOW  |         5.399(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+led<1>              |         9.559(F)|      SLOW  |         5.471(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+led<2>              |         9.208(F)|      SLOW  |         5.278(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+led<3>              |         9.025(F)|      SLOW  |         5.159(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+led<4>              |         9.564(F)|      SLOW  |         5.498(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+led<5>              |        15.290(F)|      SLOW  |         8.982(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+led<6>              |         9.982(F)|      SLOW  |         5.733(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+led<7>              |         9.524(F)|      SLOW  |         5.433(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+uart_o              |        12.656(F)|      SLOW  |         7.406(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+ultrasound_pulses<0>|         9.910(F)|      SLOW  |         5.744(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+ultrasound_pulses<1>|         9.547(F)|      SLOW  |         5.518(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+ultrasound_pulses<2>|         9.840(F)|      SLOW  |         5.702(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+ultrasound_pulses<3>|         9.061(F)|      SLOW  |         5.235(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+ultrasound_pulses<4>|         8.980(F)|      SLOW  |         5.202(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+ultrasound_pulses<5>|        10.307(F)|      SLOW  |         6.042(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+ultrasound_pulses<6>|        10.097(F)|      SLOW  |         5.712(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
+ultrasound_pulses<7>|        10.115(F)|      SLOW  |         5.748(F)|      FAST  |clk_out_OBUF_BUFG |   0.000|
 --------------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -81,11 +81,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.470|    3.128|    4.282|    5.269|
+clk            |    6.171|    3.064|    4.275|    4.789|
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |clk_out        |   12.352|
+---------------+---------------+---------+
 
-Analysis completed Tue Mar 05 18:09:02 2019 
+
+Analysis completed Fri Mar 08 11:28:48 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

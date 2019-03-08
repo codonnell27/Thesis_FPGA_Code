@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"Z:/VM_Shared_folder/Thesis/Consolidated.gz/image_fsm_test.v" Line 42: Port <arg fmt="%s" index="1">current_store_state</arg> is not connected to this instance
+</msg>
+
 </messages>
 
