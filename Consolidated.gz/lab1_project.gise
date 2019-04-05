@@ -255,8 +255,10 @@
     <transform xil_pn:end_ts="1552059658" xil_pn:in_ck="1695842836703680073" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4544067237887801922" xil_pn:start_ts="1552059657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="image_fsm_test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -290,7 +292,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1552062419" xil_pn:in_ck="-3387326467000201452" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1041955067386363578" xil_pn:start_ts="1552062399">
+    <transform xil_pn:end_ts="1553571225" xil_pn:in_ck="-3387326467000201452" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1041955067386363578" xil_pn:start_ts="1553571203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -311,11 +313,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1552062419" xil_pn:in_ck="141509727442713" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027435927655" xil_pn:start_ts="1552062419">
+    <transform xil_pn:end_ts="1553571241" xil_pn:in_ck="141509727442713" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027435927655" xil_pn:start_ts="1553571240">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1552062427" xil_pn:in_ck="-1171587393011100284" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8291842109255132884" xil_pn:start_ts="1552062419">
+    <transform xil_pn:end_ts="1553571250" xil_pn:in_ck="-1171587393011100284" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8291842109255132884" xil_pn:start_ts="1553571241">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -324,7 +326,7 @@
       <outfile xil_pn:name="main.ngd"/>
       <outfile xil_pn:name="main_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1552062477" xil_pn:in_ck="-1171587393011100283" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4245753365082497697" xil_pn:start_ts="1552062427">
+    <transform xil_pn:end_ts="1553571308" xil_pn:in_ck="-1171587393011100283" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4245753365082497697" xil_pn:start_ts="1553571250">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -338,7 +340,7 @@
       <outfile xil_pn:name="main_summary.xml"/>
       <outfile xil_pn:name="main_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1552062529" xil_pn:in_ck="-1329073226837565666" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1552062477">
+    <transform xil_pn:end_ts="1553571365" xil_pn:in_ck="-1329073226837565666" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1553571308">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -356,6 +358,10 @@
     <transform xil_pn:end_ts="1552062555" xil_pn:in_ck="4774924121320" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1552062529">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="main.bgn"/>
       <outfile xil_pn:name="main.bit"/>
@@ -365,11 +371,14 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1552057789" xil_pn:in_ck="4774924108466" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="735348135106773566" xil_pn:start_ts="1552057767">
+    <transform xil_pn:end_ts="1552062637" xil_pn:in_ck="4774924108466" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="735348135106773566" xil_pn:start_ts="1552062633">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_impactbatch.log"/>
       <outfile xil_pn:name="ise_impact.cmd"/>
     </transform>
@@ -377,13 +386,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1552062529" xil_pn:in_ck="-1171587393011100415" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1552062520">
+    <transform xil_pn:end_ts="1553571365" xil_pn:in_ck="-1171587393011100415" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1553571354">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

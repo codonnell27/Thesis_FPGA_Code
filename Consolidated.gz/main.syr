@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.98 secs
+Total CPU time to Xst completion: 0.86 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.98 secs
+Total CPU time to Xst completion: 0.86 secs
  
 --> Reading design: main.prj
 
@@ -162,16 +162,16 @@ Elaborating module <image_configs>.
 Elaborating module <ch_aline_storage>.
 
 Elaborating module <RAM32M(INIT_A=64'b0,INIT_B=64'b0,INIT_C=64'b0,INIT_D=64'b0)>.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 130: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 151: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 277: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 303: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 329: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 355: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 381: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 406: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 431: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 456: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 129: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 150: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 276: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 302: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 328: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 354: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 380: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 405: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 430: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 455: Result of 6-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <aline_transmit_fsm>.
 
@@ -494,10 +494,10 @@ Synthesizing Unit <image_configs>.
     Found 1-bit register for signal <intaking_configs>.
     Found 1-bit register for signal <updating_delays>.
     Found 5-bit register for signal <current_state>.
-    Found 2-bit adder for signal <rd_count[1]_GND_7_o_add_16_OUT> created at line 151.
-    Found 5-bit adder for signal <addr[4]_GND_7_o_add_82_OUT> created at line 456.
-    Found 2-bit comparator greater for signal <rd_count[1]_rd_count_max[1]_LessThan_16_o> created at line 149
-    Found 5-bit comparator greater for signal <addr[4]_max_addr[4]_LessThan_82_o> created at line 455
+    Found 2-bit adder for signal <rd_count[1]_GND_7_o_add_16_OUT> created at line 150.
+    Found 5-bit adder for signal <addr[4]_GND_7_o_add_82_OUT> created at line 455.
+    Found 2-bit comparator greater for signal <rd_count[1]_rd_count_max[1]_LessThan_16_o> created at line 148
+    Found 5-bit comparator greater for signal <addr[4]_max_addr[4]_LessThan_82_o> created at line 454
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 200 D-type flip-flop(s).
@@ -974,12 +974,12 @@ clk            |    5.705|    4.080|    4.612|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.20 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.69 secs
  
 --> 
 
-Total memory usage is 192756 kilobytes
+Total memory usage is 198580 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   50 (   0 filtered)

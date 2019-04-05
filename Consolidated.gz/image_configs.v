@@ -97,7 +97,6 @@ module image_configs(uart_data, rst, clk, new_data, intaking_configs, updating_d
 					pulse_shape <= test_pulse_shape;
 				end
 				
-			
 				if (rd_en) begin
 					next_state <= `READ_DELAY1;
 					updating_delays <= 1;

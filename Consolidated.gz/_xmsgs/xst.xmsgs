@@ -23,34 +23,34 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\main.v" Line 56: Assignment to <arg fmt="%s" index="1">receiving_data</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 130: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 129: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 151: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 150: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 277: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 276: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 303: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 302: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 329: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 328: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 355: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 354: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 381: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 380: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 406: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 405: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 431: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 430: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 456: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\image_configs.v" Line 455: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\vmware-host\shared folders\VM_Shared_folder\Thesis\Consolidated.gz\Transmit_counter.v" Line 103: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
